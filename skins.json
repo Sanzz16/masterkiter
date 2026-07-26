@@ -740,7 +740,7 @@
           "id": "alice_007",
           "skin_name": "Dreaming Monarch",
           "image": "https://github.com/Mexica23/april_images/raw/refs/heads/main/AliceColPort.jpg",
-          "script": "https://github.com/Mexica23/April_2026_3/raw/refs/heads/main/alice_def_collector.zip",
+          "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F1%20ALICE%20COLLECTOR.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -974,6 +974,16 @@
               "file": ""
             }
           ],
+          "name": ""
+        },
+        {
+          "id": "alpha_008",
+          "skin_name": "Edict of Sands",
+          "image": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/IMG%20ALPHA%20NEWEPIC.jpg",
+          "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F1%20ALPHA%20NEW%20EPIC.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
           "name": ""
         }
       ]
@@ -3238,6 +3248,16 @@
           "name": ""
         },
         {
+          "id": "beatrix_008",
+          "skin_name": "Four Seasons of Fragrance",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAzQCVz4iTpx76GRQ-CXaY3Cc_Q1Z48LkyVM7MXdRS9leMOCjfHUn_v26P&s=10",
+          "script": "https://github.com/Mr-Nutcracker/ntx/raw/main/Beatrix/Beatrix%20Default/Beatrix%20Epic.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
+          "name": ""
+        },
+        {
           "id": "beatrix_002",
           "skin_name": "Blitz Attack",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/2/25/Hero1053-portrait.png/revision/latest?cb=20220525170422",
@@ -4908,6 +4928,23 @@
           "name": ""
         },
         {
+          "id": "chou_013",
+          "skin_name": "Ken Masters",
+          "image": "https://raw.githubusercontent.com/missnapokita/june26-image/main/Hero102614_CAB_700994e81bbeccef29b210095397de63.png",
+          "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/chou%20ryu.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [
+            {
+              "id": "kof",
+              "name": "KOF",
+              "icon": "https://static.wikia.nocookie.net/mobile-legends/images/7/7f/KOF_Skin_Tag.png/revision/latest/scale-to-width-down/75",
+              "file": "KOF Skin Tag.png"
+            }
+          ],
+          "name": "Ken Masters, Chou"
+        },
+        {
           "id": "chou_002",
           "skin_name": "Dragon Boy",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/b/be/Hero263-portrait.png/revision/latest?cb=20220525164851",
@@ -4928,7 +4965,7 @@
           "id": "chou_003",
           "skin_name": "Iori Yagami",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/3/3c/Hero266-portrait.png/revision/latest?cb=20220525164854",
-          "script": "https://github.com/Mexi23/April_2026/raw/refs/heads/main/chou_kof.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Chou/Chou%20Default/Chou%20KOF.zip",
           "featured": true,
           "enabled": true,
           "tags": [
@@ -4945,7 +4982,7 @@
           "id": "chou_004",
           "skin_name": "Thunderfist",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/e/ed/Hero268-portrait.png/revision/latest?cb=20220525164856",
-          "script": "https://github.com/tin0521/ff/raw/main/chou_thunderfist.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Chou/Chou%20Default/Chou%20Dawning%20Stars.zip",
           "featured": false,
           "enabled": true,
           "tags": [],
@@ -4955,7 +4992,7 @@
           "id": "chou_005",
           "skin_name": "S.T.U.N. Chou",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/6/68/Hero269-portrait.png/revision/latest?cb=20220525164857",
-          "script": "https://github.com/tin0521/ff/raw/main/chou_stun.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Chou/Chou%20Default/Chou%20STUN.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -4972,7 +5009,7 @@
           "id": "chou_006",
           "skin_name": "Libra Shiryu",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/8/8c/Hero102611-portrait.png/revision/latest?cb=20220915121517",
-          "script": "https://github.com/tin0521/ff/raw/main/chou_librashiryu.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Chou/Chou%20Default/Chou%20Saint%20Seiya%20-%20Libra%20Shiryu.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -5006,7 +5043,7 @@
           "id": "chou_008",
           "skin_name": "ECHO",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/e/ef/Hero102612-portrait.png/revision/latest?cb=20230805043953",
-          "script": "https://github.com/tin0521/ff/raw/main/chou_echo.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Chou/Chou%20Default/Chou%20Champion.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -5086,23 +5123,6 @@
             }
           ],
           "name": ""
-        },
-        {
-          "id": "chou_013",
-          "skin_name": "Ken Masters",
-          "image": "https://raw.githubusercontent.com/missnapokita/june26-image/main/Hero102614_CAB_700994e81bbeccef29b210095397de63.png",
-          "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/chou%20ryu.zip",
-          "featured": false,
-          "enabled": true,
-          "tags": [
-            {
-              "id": "kof",
-              "name": "KOF",
-              "icon": "https://static.wikia.nocookie.net/mobile-legends/images/7/7f/KOF_Skin_Tag.png/revision/latest/scale-to-width-down/75",
-              "file": "KOF Skin Tag.png"
-            }
-          ],
-          "name": "Ken Masters, Chou"
         }
       ]
     },
@@ -6226,6 +6246,16 @@
           "name": ""
         },
         {
+          "id": "dyrroth_007",
+          "skin_name": "Guille",
+          "image": "https://raw.githubusercontent.com/missnapokita/june26-image/main/Hero1859_CAB_5f9f3135db0a79ca16810c2154deccfd.png",
+          "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/dy%20guile.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
+          "name": ""
+        },
+        {
           "id": "dyrroth_002",
           "skin_name": "Naraka Flame",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/c/cd/Hero857-portrait.png/revision/latest?cb=20230615180223",
@@ -6258,7 +6288,7 @@
           "id": "dyrroth_003",
           "skin_name": "Orochi Chris",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/1/1d/Hero853-portrait.png/revision/latest?cb=20220525170033",
-          "script": "https://github.com/tin0521/ff/raw/main/dyroth_kof.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Dyrroth/Dyrroth%20Default/Dyrroth%20KOF.zip",
           "featured": true,
           "enabled": true,
           "tags": [
@@ -6345,7 +6375,7 @@
           "id": "dyrroth_006",
           "skin_name": "Gon",
           "image": "https://i.imgur.com/aSyt8Uk.png",
-          "script": "https://github.com/tin0521/dec2025/raw/refs/heads/main/dyroth_gon.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Dyrroth/Dyrroth%20Default/Dyrroth%20Hunter%20x%20Hunter.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -6368,16 +6398,6 @@
               "file": ""
             }
           ],
-          "name": ""
-        },
-        {
-          "id": "dyrroth_007",
-          "skin_name": "Guille",
-          "image": "https://raw.githubusercontent.com/missnapokita/june26-image/main/Hero1859_CAB_5f9f3135db0a79ca16810c2154deccfd.png",
-          "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/dy%20guile.zip",
-          "featured": false,
-          "enabled": true,
-          "tags": [],
           "name": ""
         }
       ]
@@ -7316,9 +7336,9 @@
         },
         {
           "id": "fanny_006",
-          "name": "",
+          "skin_name": "",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/1/10/Hero174-portrait.png/revision/latest?cb=20220525164704",
-          "script": "https://github.com/tin0521/assn/raw/refs/heads/main/fanny_skylark.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Fanny/Fanny%20Default/Fanny%20Luckybox.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -7328,7 +7348,8 @@
               "icon": "https://static.wikia.nocookie.net/mobile-legends/images/c/cf/Luckybox_Skin_Tag.png/revision/latest/scale-to-width-down/75",
               "file": "Luckybox Skin Tag.png"
             }
-          ]
+          ],
+          "name": ""
         },
         {
           "id": "fanny_007",
@@ -9461,7 +9482,7 @@
           "id": "guinevere_003",
           "skin_name": "Lady Crane",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/a/a7/Hero806-portrait.png/revision/latest?cb=20220525165916",
-          "script": "https://github.com/tin0521/ff/raw/main/guinevere_ladycrane.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Guinevere/Guinevere%20Default/Guinevere%20Luckybox.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -9490,7 +9511,7 @@
           "id": "guinevere_004",
           "skin_name": "Athena Asamiya",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/2/2e/Hero803-portrait.png/revision/latest?cb=20220525165906",
-          "script": "https://github.com/tin0521/ff/raw/main/guinevere_kof.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Guinevere/Guinevere%20Default/Guinevere%20KOF.zip",
           "featured": true,
           "enabled": true,
           "tags": [
@@ -9519,7 +9540,7 @@
           "id": "guinevere_005",
           "skin_name": "Psion of Tomorrow",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/3/33/Hero809-portrait.png/revision/latest?cb=20220525165927",
-          "script": "https://github.com/tin0521/ff/raw/main/guinevere_legend.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Guinevere/Guinevere%20Default/Guinevere%20Legend.zip",
           "featured": true,
           "enabled": true,
           "tags": [
@@ -9693,7 +9714,7 @@
           "id": "guinevere_011",
           "skin_name": "Twilight Star",
           "image": "https://github.com/Mexi23/SeptUpdate/raw/refs/heads/main/guinevere.png",
-          "script": "https://github.com/tin0521/Sept/raw/refs/heads/main/guine_twilightstar.zip",
+          "script": "https://github.com/Meow00001/Files/raw/main/Guinevere/Guinevere%20Default/Guinevere%20Aspirant.zip",
           "featured": true,
           "enabled": true,
           "tags": [
@@ -10332,6 +10353,16 @@
               "file": ""
             }
           ],
+          "name": ""
+        },
+        {
+          "id": "hanabi_009",
+          "skin_name": "Twin Crescent",
+          "image": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/IMG%20HANABI%20GOLDENMNT.jpg",
+          "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F1%20HANABI%20GOLDENMONTH.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
           "name": ""
         }
       ]
@@ -12460,6 +12491,45 @@
           "name": ""
         },
         {
+          "id": "joy_006",
+          "skin_name": "Neobeast Joy",
+          "image": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F3%20IMG%20JOY%20NEOBEAST.png",
+          "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F3%20Joy%20Neobeast.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
+          "name": ""
+        },
+        {
+          "id": "joy_005",
+          "skin_name": "ONIC PH",
+          "image": "https://github.com/Mexi23/SeptUpdate/raw/refs/heads/main/GyYu9aQboAAokod.jpg_large.jpg",
+          "script": "https://github.com/Mexica23/April_2026_3/raw/refs/heads/main/joy_def_champion.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [
+            {
+              "id": "backup",
+              "name": "backup",
+              "icon": "",
+              "file": ""
+            },
+            {
+              "id": "joy",
+              "name": "joy",
+              "icon": "",
+              "file": ""
+            },
+            {
+              "id": "assassin",
+              "name": "assassin",
+              "icon": "",
+              "file": ""
+            }
+          ],
+          "name": ""
+        },
+        {
           "id": "joy_002",
           "skin_name": "Royal Protector",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/6/66/Hero1184-portrait.png/revision/latest?cb=20240114155034",
@@ -12522,35 +12592,6 @@
           "skin_name": "Exostar Scout",
           "image": "https://pbs.twimg.com/media/GlbnhLxbwAESFzD?format=jpg",
           "script": "https://github.com/Mexica23/April_2026_3/raw/refs/heads/main/joy_def_star.zip",
-          "featured": false,
-          "enabled": true,
-          "tags": [
-            {
-              "id": "backup",
-              "name": "backup",
-              "icon": "",
-              "file": ""
-            },
-            {
-              "id": "joy",
-              "name": "joy",
-              "icon": "",
-              "file": ""
-            },
-            {
-              "id": "assassin",
-              "name": "assassin",
-              "icon": "",
-              "file": ""
-            }
-          ],
-          "name": ""
-        },
-        {
-          "id": "joy_005",
-          "skin_name": "ONIC PH",
-          "image": "https://github.com/Mexi23/SeptUpdate/raw/refs/heads/main/GyYu9aQboAAokod.jpg_large.jpg",
-          "script": "https://github.com/Mexica23/April_2026_3/raw/refs/heads/main/joy_def_champion.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -12645,7 +12686,7 @@
           "id": "julian_003",
           "skin_name": "Megumi Fushiguro",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/4/49/Hero1163-portrait.png/revision/latest?cb=20230212035450",
-          "script": "https://github.com/tin0521/ff/raw/main/julian_jujutsu.zip",
+          "script": "https://github.com/Mr-Nutcracker/ntx/raw/main/Julian/JJKRevamp/Julian%20X%20Megumi%20Revamp%20Replace%20Default%20-%5B%20Nutx%2CK4%2CXvrnn%20%5D.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -17065,6 +17106,16 @@
             }
           ],
           "name": ""
+        },
+        {
+          "id": "martis_008",
+          "skin_name": "Wild Renegade",
+          "image": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/IMG%20MARTIS%20NEWEPIC.jpg",
+          "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F1%20MARTIS%20NEW%20EPIC.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
+          "name": ""
         }
       ]
     },
@@ -17413,7 +17464,7 @@
           "id": "melissa_002",
           "skin_name": "Nobara Kugisaki",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/8/82/Hero1143-portrait.png/revision/latest?cb=20230212035448",
-          "script": "https://github.com/tin0521/mm/raw/main/melissa_jujutsu.zip",
+          "script": "https://github.com/Mr-Nutcracker/ntx/raw/main/Melissa/Melissa%20Default/Melissa%20X%20Nobara%20Revamp%20Replace%20Default%20-%5BK4%2CNutx%2CXvrn%5D.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -17866,6 +17917,16 @@
               "file": ""
             }
           ],
+          "name": ""
+        },
+        {
+          "id": "miya_010",
+          "skin_name": "Beyond the Clouds",
+          "image": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/IMG%20F1%20Miya%20BTC.jpg",
+          "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F1%20Miya%20BTC.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
           "name": ""
         },
         {
@@ -18462,6 +18523,16 @@
               "file": ""
             }
           ],
+          "name": ""
+        },
+        {
+          "id": "nana_009",
+          "skin_name": "Stardust Dreamer",
+          "image": "https://github.com/Mr-Nutcracker/splashdog/raw/main/nana_s_free_10th_anniversary_skin_splash_art_by_dsfsdfsdfew134_dmee428-fullview.jpg",
+          "script": "https://github.com/Mr-Nutcracker/ntx/raw/main/Nana/Nana%2010th/Nana%2010th%20Anniversary%20Script%20(Default)%20-%20Nutx.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
           "name": ""
         },
         {
@@ -19312,7 +19383,7 @@
           "id": "novaria_003",
           "skin_name": "Dragonsworn",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/2/24/Hero1194-portrait.png/revision/latest?cb=20240923124141",
-          "script": "https://github.com/tin0521/mge/raw/main/novaria_collector.zip",
+          "script": "https://github.com/Mr-Nutcracker/ntx/raw/main/Novaria/NovaCC/Novaria%20CC%20(Default)%20-%20Nutx.zip",
           "featured": true,
           "enabled": true,
           "tags": [
@@ -19378,9 +19449,9 @@
           "id": "obsidia_001",
           "skin_name": "Backup",
           "image": "https://github.com/zetsuya05/january_2026/raw/main/h.png",
-          "script": "",
+          "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F1%20OBSIDIA%20STARLIGHT.zip",
           "featured": false,
-          "enabled": false,
+          "enabled": true,
           "tags": [
             {
               "id": "backup",
@@ -19401,6 +19472,16 @@
               "file": ""
             }
           ],
+          "name": ""
+        },
+        {
+          "id": "obsidia_002",
+          "skin_name": "Magitech Wraith",
+          "image": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/IMG%20OBSIDIA%20STARLIGHT.jpg",
+          "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F1%20OBSIDIA%20STARLIGHT.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
           "name": ""
         }
       ]
@@ -19438,6 +19519,16 @@
               "file": ""
             }
           ],
+          "name": ""
+        },
+        {
+          "id": "odette_009",
+          "skin_name": "Goddest of Light",
+          "image": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F3%20IMG%20ODETTE%20LIGHTNING.png",
+          "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F3%20Odette%20Lightning.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
           "name": ""
         },
         {
@@ -24170,7 +24261,7 @@
           "id": "xavier_003",
           "skin_name": "Satoru Gojo",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/5/51/Hero1153-portrait.png/revision/latest?cb=20230212035449",
-          "script": "https://github.com/tin0521/mge/raw/main/xavier_jujutsu.zip",
+          "script": "https://github.com/Mr-Nutcracker/ntx/raw/main/Xavier/JJK%20Revamped/Xavier%20X%20Satoru%20Replace%20Default%20-%5BK4%2CNutx%2CXvrn%5D.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -24592,7 +24683,7 @@
           "id": "yin_005",
           "skin_name": "Yuji Itadori",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/f/f7/Hero1134-portrait.png/revision/latest?cb=20230212035447",
-          "script": "https://github.com/tin0521/ff/raw/refs/heads/main/yin_jujutsu.zip",
+          "script": "https://github.com/Mr-Nutcracker/ntx/raw/main/Yin/Yin%20Default/Yin%20Replace%20Skins/Yin%20X%20Itadori%20Revamp%20Blackflash%20Mode%20Replace%20Default%20-%5BK4%2CNutx%2CXvrn%5D.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -24681,6 +24772,16 @@
               "file": ""
             }
           ],
+          "name": ""
+        },
+        {
+          "id": "yu-zhong_008",
+          "skin_name": "Cyber Tyrant",
+          "image": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F3%20IMG%20Yuzhong%20Metro%20Zero.png",
+          "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F3%20Yuzhong%20Metro%20Zero.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
           "name": ""
         },
         {
@@ -25010,6 +25111,16 @@
               "file": "Starlight Skin Tag.png"
             }
           ]
+        },
+        {
+          "id": "zetian_003",
+          "skin_name": "Nexus of Planet",
+          "image": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F3%20IMG%20ZETIAN%20GALAXY.png",
+          "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F3%20ZETIAN%20NEXUS%20GALAXY.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
+          "name": ""
         }
       ]
     },
