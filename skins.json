@@ -3250,7 +3250,7 @@
         {
           "id": "beatrix_008",
           "skin_name": "Four Seasons of Fragrance",
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAzQCVz4iTpx76GRQ-CXaY3Cc_Q1Z48LkyVM7MXdRS9leMOCjfHUn_v26P&s=10",
+          "image": "https://raw.githubusercontent.com/missnapokita/bagong-custom-skins/main/bea%20epic.png",
           "script": "https://github.com/Mr-Nutcracker/ntx/raw/main/Beatrix/Beatrix%20Default/Beatrix%20Epic.zip",
           "featured": false,
           "enabled": true,
@@ -4945,6 +4945,16 @@
           "name": "Ken Masters, Chou"
         },
         {
+          "id": "chou_014",
+          "skin_name": "Ken 2",
+          "image": "https://raw.githubusercontent.com/missnapokita/bagong-custom-skins/main/ken%202.png",
+          "script": "https://github.com/Meow00001/Files/raw/main/Chou/Chou%20Default/Chou%20Street%20Figther%20-%20Ken%20(Outfit%201).zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
+          "name": ""
+        },
+        {
           "id": "chou_002",
           "skin_name": "Dragon Boy",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/b/be/Hero263-portrait.png/revision/latest?cb=20220525164851",
@@ -6250,6 +6260,16 @@
           "skin_name": "Guille",
           "image": "https://raw.githubusercontent.com/missnapokita/june26-image/main/Hero1859_CAB_5f9f3135db0a79ca16810c2154deccfd.png",
           "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/dy%20guile.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
+          "name": ""
+        },
+        {
+          "id": "dyrroth_008",
+          "skin_name": "Guile 2",
+          "image": "https://raw.githubusercontent.com/missnapokita/bagong-custom-skins/main/Picsart_26-07-26_15-09-57-359.png",
+          "script": "https://github.com/Meow00001/Files/raw/main/Dyrroth/Dyrroth%20Default/Dyrroth%20Street%20Fighter%20-%20Guile%20(Outfit%202).zip",
           "featured": false,
           "enabled": true,
           "tags": [],
@@ -9450,6 +9470,26 @@
           "name": ""
         },
         {
+          "id": "guinevere_012",
+          "skin_name": "Chun-Li",
+          "image": "https://raw.githubusercontent.com/missnapokita/june26-image/main/Hero108013_CAB_4714dc213e61978cf2789baeabb62f3b.png",
+          "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/guin%20chun.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
+          "name": ""
+        },
+        {
+          "id": "guinevere_014",
+          "skin_name": "Chun-Li 2",
+          "image": "https://raw.githubusercontent.com/missnapokita/bagong-custom-skins/main/Picsart_26-07-26_15-12-46-294.jpg",
+          "script": "https://github.com/Meow00001/Files/raw/main/Guinevere/Guinevere%20Default/Guinevere%20Street%20Figther%20-%20Chun%20Li%20(Outfit%202).zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
+          "name": ""
+        },
+        {
           "id": "guinevere_002",
           "skin_name": "Elegant Butterfly",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/f/fb/Hero108010-portrait.png/revision/latest?cb=20240114135706",
@@ -9737,16 +9777,6 @@
               "file": ""
             }
           ],
-          "name": ""
-        },
-        {
-          "id": "guinevere_012",
-          "skin_name": "Chun-Li",
-          "image": "https://raw.githubusercontent.com/missnapokita/june26-image/main/Hero108013_CAB_4714dc213e61978cf2789baeabb62f3b.png",
-          "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/guin%20chun.zip",
-          "featured": false,
-          "enabled": true,
-          "tags": [],
           "name": ""
         },
         {
@@ -18528,7 +18558,7 @@
         {
           "id": "nana_009",
           "skin_name": "Stardust Dreamer",
-          "image": "https://github.com/Mr-Nutcracker/splashdog/raw/main/nana_s_free_10th_anniversary_skin_splash_art_by_dsfsdfsdfew134_dmee428-fullview.jpg",
+          "image": "https://raw.githubusercontent.com/missnapokita/bagong-custom-skins/main/nana%20epic.png",
           "script": "https://github.com/Mr-Nutcracker/ntx/raw/main/Nana/Nana%2010th/Nana%2010th%20Anniversary%20Script%20(Default)%20-%20Nutx.zip",
           "featured": false,
           "enabled": true,
@@ -19772,6 +19802,26 @@
           "name": ""
         },
         {
+          "id": "paquito_010",
+          "skin_name": "Ryu",
+          "image": "https://raw.githubusercontent.com/missnapokita/bagong-custom-skins/main/ryu.png",
+          "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/paq%20ken.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
+          "name": ""
+        },
+        {
+          "id": "paquito_011",
+          "skin_name": "Ryu 2",
+          "image": "https://raw.githubusercontent.com/missnapokita/bagong-custom-skins/main/ryu%202.png",
+          "script": "https://github.com/Mr-Nutcracker/ntx/raw/main/Paquito/Paquito%20Default/Paquito%20Street%20Fighter%20-%20Ryu%20(Outfit%201).zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [],
+          "name": ""
+        },
+        {
           "id": "paquito_002",
           "skin_name": "Blazing Tiger",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/3/3d/Hero1037-portrait.png/revision/latest?cb=20230514163428",
@@ -20001,16 +20051,6 @@
               "file": ""
             }
           ],
-          "name": ""
-        },
-        {
-          "id": "paquito_010",
-          "skin_name": "Ryu",
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC7h6phUpcxMe4NGY51UNdpTXpdzAQaU0RCKtEfse4gtYTgQO0X1dZdmQ&s=10",
-          "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/paq%20ken.zip",
-          "featured": false,
-          "enabled": true,
-          "tags": [],
           "name": ""
         }
       ]
