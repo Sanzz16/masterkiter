@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Backup",
+    "script": "https://www.github.com"
+  },
+  {
+    "name": "Night Mode",
+    "image": "https://www.example.com/image1.jpg",
+    "image2": "https://www.example.com/image2.jpg",
+    "image3": "https://www.example.com/image3.jpg",
+    "image4": "https://www.example.com/image4.jpg",
+    "script": "https://www.github.com/script1.zip",
+    "script2": "https://www.github.com/script2.zip",
+    "script3": "https://www.github.com/script3.zip",
+    "script4": "https://www.github.com/script4.zip"
+  }
+]
