@@ -1,17 +1,18 @@
 [
   {
     "name": "Backup",
-    "script": "https://www.github.com"
+    "script": "https://raw.githubusercontent.com/missnapokita/maps/main/dark%20ultra.zip",
+    "image": ""
   },
   {
     "name": "Night Mode",
-    "image": "https://www.example.com/image1.jpg",
-    "image2": "https://www.example.com/image2.jpg",
-    "image3": "https://www.example.com/image3.jpg",
-    "image4": "https://www.example.com/image4.jpg",
-    "script": "https://www.github.com/script1.zip",
-    "script2": "https://www.github.com/script2.zip",
-    "script3": "https://www.github.com/script3.zip",
-    "script4": "https://www.github.com/script4.zip"
+    "image": "https://github.com/missnapokita/maps/blob/main/image/Picsart_26-07-28_23-26-04-012.jpg?raw=true",
+    "image2": "https://raw.githubusercontent.com/missnapokita/maps/refs/heads/main/image/Picsart_26-07-28_23-26-20-456.jpg",
+    "image3": "https://raw.githubusercontent.com/missnapokita/maps/refs/heads/main/image/Picsart_26-07-28_23-26-42-827.jpg",
+    "image4": "https://raw.githubusercontent.com/missnapokita/maps/refs/heads/main/image/Picsart_26-07-28_23-26-57-933.jpg",
+    "script": "https://raw.githubusercontent.com/missnapokita/maps/main/dark%20low.zip",
+    "script2": "",
+    "script3": "https://raw.githubusercontent.com/missnapokita/maps/main/dark%20high.zip",
+    "script4": "https://raw.githubusercontent.com/missnapokita/maps/main/dark%20ultra.zip"
   }
 ]
