@@ -4929,7 +4929,7 @@
         },
         {
           "id": "chou_013",
-          "skin_name": "Ken Masters",
+          "skin_name": "Ken",
           "image": "https://raw.githubusercontent.com/missnapokita/june26-image/main/Hero102614_CAB_700994e81bbeccef29b210095397de63.png",
           "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/chou%20ryu.zip",
           "featured": false,
@@ -4942,7 +4942,7 @@
               "file": "KOF Skin Tag.png"
             }
           ],
-          "name": "Ken Masters, Chou"
+          "name": "Ken, Chou"
         },
         {
           "id": "chou_014",
@@ -6257,7 +6257,7 @@
         },
         {
           "id": "dyrroth_007",
-          "skin_name": "Guille",
+          "skin_name": "Guile",
           "image": "https://raw.githubusercontent.com/missnapokita/june26-image/main/Hero1859_CAB_5f9f3135db0a79ca16810c2154deccfd.png",
           "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/dy%20guile.zip",
           "featured": false,
