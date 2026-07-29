@@ -7274,7 +7274,7 @@
       "skins": [
         {
           "id": "fanny_001",
-          "name": "",
+          "skin_name": "backup",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/7/7f/Hero171-portrait.png/revision/latest?cb=20240605151224",
           "script": "https://github.com/tin0521/dec2025/raw/refs/heads/main/fanny_backup.zip",
           "featured": false,
@@ -7290,7 +7290,7 @@
         },
         {
           "id": "fanny_002",
-          "name": "",
+          "skin_name": "Galactic Starhawk",
           "image": "https://github.com/tin0521/January_2026/blob/main/fanny%20legend.jpg?raw=true",
           "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F8%20FANNY%20LEGEND.zip",
           "featured": true,
@@ -7306,7 +7306,7 @@
         },
         {
           "id": "fanny_003",
-          "name": "",
+          "skin_name": "Lifeguard",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/7/7d/Hero176-portrait.png/revision/latest?cb=20220525164706",
           "script": "https://github.com/tin0521/assn/raw/refs/heads/main/fanny_summer.zip",
           "featured": false,
@@ -7356,7 +7356,7 @@
         },
         {
           "id": "fanny_006",
-          "skin_name": "",
+          "skin_name": "Skylark",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/1/10/Hero174-portrait.png/revision/latest?cb=20220525164704",
           "script": "https://github.com/Meow00001/Files/raw/main/Fanny/Fanny%20Default/Fanny%20Luckybox.zip",
           "featured": false,
@@ -7373,7 +7373,7 @@
         },
         {
           "id": "fanny_007",
-          "name": "",
+          "skin_name": "Lightborn - Ranger",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/5/5b/Hero177-portrait.png/revision/latest?cb=20220525164707",
           "script": "https://github.com/tin0521/assn/raw/refs/heads/main/fanny_lightborn.zip",
           "featured": false,
@@ -7406,7 +7406,7 @@
         },
         {
           "id": "fanny_009",
-          "name": "",
+          "skin_name": "Heart Afloat",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/e/ed/Hero101711-portrait.png/revision/latest?cb=20230212035453",
           "script": "https://github.com/tin0521/assn/raw/refs/heads/main/fanny_heartafloat.zip",
           "featured": false,
@@ -7414,7 +7414,7 @@
           "tags": [
             {
               "id": "valentine",
-              "name": "Valentine",
+              "name": "Heart Afloat",
               "icon": "https://static.wikia.nocookie.net/mobile-legends/images/8/8d/Valentine_Skin_Tag.png/revision/latest/scale-to-width-down/75",
               "file": "Valentine Skin Tag.png"
             }
@@ -7422,7 +7422,7 @@
         },
         {
           "id": "fanny_010",
-          "name": "",
+          "skin_name": "Campus Youth",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/8/8f/Hero172-portrait.png/revision/latest?cb=20220525164702",
           "script": "https://github.com/tin0521/assn/raw/refs/heads/main/fanny_campusyouth.zip",
           "featured": false,
@@ -7430,7 +7430,7 @@
           "tags": [
             {
               "id": "elite",
-              "name": "Elite",
+              "name": "Campus Youth",
               "icon": "https://static.wikia.nocookie.net/mobile-legends/images/a/a1/Elite_Skin_Tag.png/revision/latest/scale-to-width-down/75",
               "file": "Elite Skin Tag.png"
             }
@@ -7438,7 +7438,7 @@
         },
         {
           "id": "fanny_011",
-          "name": "",
+          "skin_name": "Royal Cavalry",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/f/f4/Hero175-portrait.png/revision/latest?cb=20220525164705",
           "script": "https://github.com/tin0521/assn/raw/refs/heads/main/fanny_royalcavalry.zip",
           "featured": false,
@@ -7446,7 +7446,7 @@
           "tags": [
             {
               "id": "starlight",
-              "name": "Starlight",
+              "name": "Royal Cavalry",
               "icon": "https://static.wikia.nocookie.net/mobile-legends/images/2/26/Starlight_Skin_Tag.png/revision/latest/scale-to-width-down/75",
               "file": "Starlight Skin Tag.png"
             }
