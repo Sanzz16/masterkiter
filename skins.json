@@ -4929,7 +4929,7 @@
         },
         {
           "id": "chou_013",
-          "skin_name": "Ken",
+          "skin_name": "Ken Masters",
           "image": "https://raw.githubusercontent.com/missnapokita/june26-image/main/Hero102614_CAB_700994e81bbeccef29b210095397de63.png",
           "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/chou%20ryu.zip",
           "featured": false,
@@ -6257,7 +6257,7 @@
         },
         {
           "id": "dyrroth_007",
-          "skin_name": "Guile",
+          "skin_name": "Guille",
           "image": "https://raw.githubusercontent.com/missnapokita/june26-image/main/Hero1859_CAB_5f9f3135db0a79ca16810c2154deccfd.png",
           "script": "https://github.com/azizboy2007/MADZAK2718/raw/refs/heads/main/dy%20guile.zip",
           "featured": false,
@@ -7274,7 +7274,7 @@
       "skins": [
         {
           "id": "fanny_001",
-          "skin_name": "Backup",
+          "name": "",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/7/7f/Hero171-portrait.png/revision/latest?cb=20240605151224",
           "script": "https://github.com/tin0521/dec2025/raw/refs/heads/main/fanny_backup.zip",
           "featured": false,
@@ -7286,12 +7286,11 @@
               "icon": "",
               "file": ""
             }
-          ],
-          "name": ""
+          ]
         },
         {
           "id": "fanny_002",
-          "skin_name": "Galactic Starhawk",
+          "name": "",
           "image": "https://github.com/tin0521/January_2026/blob/main/fanny%20legend.jpg?raw=true",
           "script": "https://github.com/azizboy2007/KAIZERUSDSKTOP2026/raw/main/F8%20FANNY%20LEGEND.zip",
           "featured": true,
@@ -7303,12 +7302,11 @@
               "icon": "https://static.wikia.nocookie.net/mobile-legends/images/3/33/Legend_Skin_Tag.png/revision/latest/scale-to-width-down/75",
               "file": "Legend Skin Tag.png"
             }
-          ],
-          "name": ""
+          ]
         },
         {
           "id": "fanny_003",
-          "skin_name": "Lifeguard",
+          "name": "",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/7/7d/Hero176-portrait.png/revision/latest?cb=20220525164706",
           "script": "https://github.com/tin0521/assn/raw/refs/heads/main/fanny_summer.zip",
           "featured": false,
@@ -7320,8 +7318,7 @@
               "icon": "https://static.wikia.nocookie.net/mobile-legends/images/7/7b/Summer_Skin_Tag.png/revision/latest/scale-to-width-down/75",
               "file": "Summer Skin Tag.png"
             }
-          ],
-          "name": ""
+          ]
         },
         {
           "id": "fanny_004",
@@ -7359,7 +7356,7 @@
         },
         {
           "id": "fanny_006",
-          "skin_name": "Skylark",
+          "skin_name": "",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/1/10/Hero174-portrait.png/revision/latest?cb=20220525164704",
           "script": "https://github.com/Meow00001/Files/raw/main/Fanny/Fanny%20Default/Fanny%20Luckybox.zip",
           "featured": false,
@@ -7376,7 +7373,7 @@
         },
         {
           "id": "fanny_007",
-          "skin_name": "Lightborn - Ranger",
+          "name": "",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/5/5b/Hero177-portrait.png/revision/latest?cb=20220525164707",
           "script": "https://github.com/tin0521/assn/raw/refs/heads/main/fanny_lightborn.zip",
           "featured": false,
@@ -7388,8 +7385,7 @@
               "icon": "https://static.wikia.nocookie.net/mobile-legends/images/5/54/Lightborn_Skin_Tag.png/revision/latest/scale-to-width-down/75",
               "file": "Lightborn Skin Tag.png"
             }
-          ],
-          "name": ""
+          ]
         },
         {
           "id": "fanny_008",
@@ -7410,7 +7406,7 @@
         },
         {
           "id": "fanny_009",
-          "skin_name": "Heart Afloat",
+          "name": "",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/e/ed/Hero101711-portrait.png/revision/latest?cb=20230212035453",
           "script": "https://github.com/tin0521/assn/raw/refs/heads/main/fanny_heartafloat.zip",
           "featured": false,
@@ -7422,12 +7418,11 @@
               "icon": "https://static.wikia.nocookie.net/mobile-legends/images/8/8d/Valentine_Skin_Tag.png/revision/latest/scale-to-width-down/75",
               "file": "Valentine Skin Tag.png"
             }
-          ],
-          "name": ""
+          ]
         },
         {
           "id": "fanny_010",
-          "skin_name": "Campus Youth",
+          "name": "",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/8/8f/Hero172-portrait.png/revision/latest?cb=20220525164702",
           "script": "https://github.com/tin0521/assn/raw/refs/heads/main/fanny_campusyouth.zip",
           "featured": false,
@@ -7439,12 +7434,11 @@
               "icon": "https://static.wikia.nocookie.net/mobile-legends/images/a/a1/Elite_Skin_Tag.png/revision/latest/scale-to-width-down/75",
               "file": "Elite Skin Tag.png"
             }
-          ],
-          "name": ""
+          ]
         },
         {
           "id": "fanny_011",
-          "skin_name": "Royal Cavalry",
+          "name": "",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/f/f4/Hero175-portrait.png/revision/latest?cb=20220525164705",
           "script": "https://github.com/tin0521/assn/raw/refs/heads/main/fanny_royalcavalry.zip",
           "featured": false,
@@ -7456,13 +7450,12 @@
               "icon": "https://static.wikia.nocookie.net/mobile-legends/images/2/26/Starlight_Skin_Tag.png/revision/latest/scale-to-width-down/75",
               "file": "Starlight Skin Tag.png"
             }
-          ],
-          "name": ""
+          ]
         },
         {
           "id": "fanny_012",
-          "skin_name": "P.ACE",
-          "image": "https://raw.githubusercontent.com/missnapokita/bagong-custom-skins/main/Picsart_26-07-30_01-55-35-736.jpg",
+          "skin_name": "P.ACE Fanny",
+          "image": "https://github.com/Mexi23/SeptUpdate/raw/refs/heads/main/fanny.png",
           "script": "https://github.com/tin0521/Sept/raw/refs/heads/main/fanny_pace.zip",
           "featured": false,
           "enabled": true,
