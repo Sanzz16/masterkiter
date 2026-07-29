@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "image": "https://raw.githubusercontent.com/missnapokita/maps/refs/heads/main/image/maxresdefault.jpg",
+  "description": "Download the latest MasterKit resources and enjoy the newest available content.",
+  "button1_text": "Maybe later",
+  "button2_text": "Download",
+  "button2_link": "https://example.com/download"
+}
