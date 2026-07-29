@@ -8046,13 +8046,13 @@
       ]
     },
     {
-      "id": "fredrin",
-      "name": "Fredrin",
+      "id": "fredrinn",
+      "name": "Fredrinn",
       "category": "fighter",
       "enabled": true,
       "skins": [
         {
-          "id": "fredrin_001",
+          "id": "fredrinn_001",
           "skin_name": "Backup",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/7/78/Hero1171-portrait.png/revision/latest?cb=20240114032237",
           "script": "https://github.com/tin0521/dec2025/raw/refs/heads/main/fredrinn_backup.zip",
@@ -8066,8 +8066,8 @@
               "file": ""
             },
             {
-              "id": "fredrin",
-              "name": "fredrin",
+              "id": "fredrinn",
+              "name": "fredrinn",
               "icon": "",
               "file": ""
             },
@@ -8081,7 +8081,7 @@
           "name": ""
         },
         {
-          "id": "fredrin_002",
+          "id": "fredrinn_002",
           "skin_name": "Neobeast Fredrinn",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/8/8f/Hero1174-portrait.png/revision/latest?cb=20230805043932",
           "script": "https://github.com/Mexi23/April_2026/raw/refs/heads/main/fredrin_neoBeast.zip",
@@ -8095,8 +8095,8 @@
               "file": ""
             },
             {
-              "id": "fredrin",
-              "name": "fredrin",
+              "id": "fredrinn",
+              "name": "fredrinn",
               "icon": "",
               "file": ""
             },
@@ -8110,7 +8110,7 @@
           "name": ""
         },
         {
-          "id": "fredrin_003",
+          "id": "fredrinn_003",
           "skin_name": "SPARKLE Fredrinn",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/0/0c/Hero1175-portrait.png/revision/latest?cb=20240411075808",
           "script": "https://github.com/tin0521/dec2025/raw/refs/heads/main/fredrinn_sparkle.zip",
@@ -8124,8 +8124,8 @@
               "file": "Sparkle Skin Tag.png"
             },
             {
-              "id": "fredrin",
-              "name": "fredrin",
+              "id": "fredrinn",
+              "name": "fredrinn",
               "icon": "",
               "file": ""
             },
@@ -8139,7 +8139,7 @@
           "name": ""
         },
         {
-          "id": "fredrin_004",
+          "id": "fredrinn_004",
           "skin_name": "Royal Marshall",
           "image": "https://github.com/tin0521/dec2025/raw/main/fredrinn_stars.png",
           "script": "https://github.com/tin0521/dec2025/raw/refs/heads/main/fredrinn_starlight.zip",
@@ -8153,8 +8153,8 @@
               "file": "Starlight Skin Tag.png"
             },
             {
-              "id": "fredrin",
-              "name": "fredrin",
+              "id": "fredrinn",
+              "name": "fredrinn",
               "icon": "",
               "file": ""
             },
@@ -14752,13 +14752,13 @@
       ]
     },
     {
-      "id": "lapu_lapu",
+      "id": "lapu-lapu",
       "name": "Lapu-Lapu",
       "category": "fighter",
       "enabled": true,
       "skins": [
         {
-          "id": "lapu_lapu_001",
+          "id": "lapu-lapu_001",
           "skin_name": "Backup",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/7/78/Hero371-portrait.png/revision/latest?cb=20220525165107",
           "script": "https://github.com/missnapokita/June2024-K-L-M/raw/main/lapu%20backup.zip",
@@ -14772,7 +14772,7 @@
               "file": ""
             },
             {
-              "id": "lapu_lapu",
+              "id": "lapu-lapu",
               "name": "lapu lapu",
               "icon": "",
               "file": ""
@@ -14787,7 +14787,7 @@
           "name": ""
         },
         {
-          "id": "lapu_lapu_002",
+          "id": "lapu-lapu_002",
           "skin_name": "Adlaw's Chosen",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/f/f5/Hero377-portrait.png/revision/latest?cb=20240114105426",
           "script": "https://github.com/tin0521/ff/raw/main/lapu_collector.zip",
@@ -14801,7 +14801,7 @@
               "file": "Collector Skin Tag.png"
             },
             {
-              "id": "lapu_lapu",
+              "id": "lapu-lapu",
               "name": "lapu lapu",
               "icon": "",
               "file": ""
@@ -14816,7 +14816,7 @@
           "name": ""
         },
         {
-          "id": "lapu_lapu_003",
+          "id": "lapu-lapu_003",
           "skin_name": "Special Force",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/f/f3/Hero375-portrait.png/revision/latest?cb=20220525165118",
           "script": "https://github.com/tin0521/ff/raw/main/lapu_specialforce.zip",
@@ -14836,7 +14836,7 @@
               "file": "Special Skin Tag.png"
             },
             {
-              "id": "lapu_lapu",
+              "id": "lapu-lapu",
               "name": "lapu lapu",
               "icon": "",
               "file": ""
@@ -14851,7 +14851,7 @@
           "name": ""
         },
         {
-          "id": "lapu_lapu_004",
+          "id": "lapu-lapu_004",
           "skin_name": "Vulcan",
           "image": "https://github.com/tin0521/fightimg/raw/refs/heads/main/img_20241015_190220413.png",
           "script": "https://github.com/tin0521/ff/raw/main/lapu_vulcan.zip",
@@ -14865,7 +14865,7 @@
               "file": "Special Skin Tag.png"
             },
             {
-              "id": "lapu_lapu",
+              "id": "lapu-lapu",
               "name": "lapu lapu",
               "icon": "",
               "file": ""
@@ -14880,7 +14880,7 @@
           "name": ""
         },
         {
-          "id": "lapu_lapu_005",
+          "id": "lapu-lapu_005",
           "skin_name": "Imperial Champion",
           "image": "https://github.com/tin0521/fightimg/raw/refs/heads/main/img_20241015_190220425.png",
           "script": "https://github.com/tin0521/ff/raw/main/lapu_imperial.zip",
@@ -14894,7 +14894,7 @@
               "file": "Elite Skin Tag.png"
             },
             {
-              "id": "lapu_lapu",
+              "id": "lapu-lapu",
               "name": "lapu lapu",
               "icon": "",
               "file": ""
@@ -14909,7 +14909,7 @@
           "name": ""
         },
         {
-          "id": "lapu_lapu_006",
+          "id": "lapu-lapu_006",
           "skin_name": "Son of the Wild",
           "image": "https://github.com/tin0521/fightimg/raw/refs/heads/main/img_20241015_190220388.png",
           "script": "https://github.com/tin0521/ff/raw/main/lapu_s28.zip",
@@ -14923,7 +14923,7 @@
               "file": "S28 Skin Tag.png"
             },
             {
-              "id": "lapu_lapu",
+              "id": "lapu-lapu",
               "name": "lapu lapu",
               "icon": "",
               "file": ""
