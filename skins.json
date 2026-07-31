@@ -8613,6 +8613,35 @@
             }
           ],
           "name": ""
+        },
+        {
+          "id": "gloo_004",
+          "skin_name": "Abominable Snowgloo",
+          "image": "https://github.com/Mr-Nutcracker/splashdog/raw/main/snowgloo.jpg",
+          "script": "https://github.com/Mr-Nutcracker/ntx/raw/main/Gloo/Gloo%20Default/snowgloo%20default.zip",
+          "featured": false,
+          "enabled": true,
+          "tags": [
+            {
+              "id": "special",
+              "name": "Special",
+              "icon": "https://static.wikia.nocookie.net/mobile-legends/images/e/ed/Special_Skin_Tag.png/revision/latest/scale-to-width-down/75",
+              "file": "Special Skin Tag.png"
+            },
+            {
+              "id": "gloo",
+              "name": "gloo",
+              "icon": "",
+              "file": ""
+            },
+            {
+              "id": "tank",
+              "name": "tank",
+              "icon": "",
+              "file": ""
+            }
+          ],
+          "name": "Gloo"
         }
       ]
     },
@@ -13307,8 +13336,8 @@
         {
           "id": "kaja_001",
           "skin_name": "Backup",
-          "image": "https://static.wikia.nocookie.net/mobile-legends/images/8/86/Hero621-portrait.png/revision/latest?cb=20220525165548",
-          "script": "https://github.com/tin0521/ff/raw/main/kaja_backup.zip",
+          "image": "https://github.com/Mr-Nutcracker/splashdog/raw/main/revkaja.jpeg",
+          "script": "https://github.com/Mr-Nutcracker/ntx/releases/download/Revamped-Kaja/Revamped.Kaja.Default.Backup.zip",
           "featured": false,
           "enabled": true,
           "tags": [
@@ -13366,7 +13395,7 @@
           "id": "kaja_003",
           "skin_name": "Skyblocker",
           "image": "https://static.wikia.nocookie.net/mobile-legends/images/5/57/Hero625-portrait.png/revision/latest?cb=20220525165553",
-          "script": "https://github.com/tin0521/ff/raw/main/kaja_skyblocker.zip",
+          "script": "https://github.com/Mr-Nutcracker/ntx/releases/download/Revamped-Kaja/Revamped.Kaja.Luckybox.-.Nutx.zip",
           "featured": false,
           "enabled": true,
           "tags": [
