@@ -36,6 +36,28 @@
       ]
     },
     {
+      "id": "aulus_berserker",
+      "hero": "Aulus",
+      "base_name": "Barserker",
+      "base_image": "https://static.wikia.nocookie.net/mobile-legends/images/4/49/Hero1082-portrait.png/revision/latest/scale-to-width-down/150?cb=20260604033730",
+      "backup_script": "https://github.com/missnapokita/June2024-R-S-T/raw/main/saber%20backup.zip",
+      "enabled": true,
+      "skin_tags": [
+        "elite"
+      ],
+      "targets": [
+        {
+          "id": "aulus_baren_pioneer_to_barren_poneer",
+          "name": "Barren Pioneer",
+          "image": "https://static.wikia.nocookie.net/mobile-legends/images/f/f1/Hero1083-portrait.png/revision/latest/scale-to-width-down/150?cb=20260619033752",
+          "script": "https://github.com/azizboy2007/SKIN-UPGRADE/raw/main/Aulus%20Basic%20to%20ELITE.zip",
+          "type": "aulus",
+          "enabled": true,
+          "skin_tags": []
+        }
+      ]
+    },
+    {
       "id": "saber_golden_flash",
       "hero": "Saber",
       "base_name": "Golden Flash",
