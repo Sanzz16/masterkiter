@@ -1,5 +1,5 @@
 {
-  "ads_enabled": false,
+  "ads_enabled": true,
   "app_open_enabled": true,
   "interstitial_enabled": true,
   "download_interstitial_enabled": true,
