@@ -1,0 +1,74 @@
+[
+  {
+    "hero_name": "Chou",
+    "skin_name": "Michael Jackson",
+    "image": "https://raw.githubusercontent.com/missnapokita/bagong-custom-skins/refs/heads/main/michael-jackson-portrait-v0-6544v66elo6g1.png",
+    "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_158209b180032c4564b8f3bde8c48888.png",
+    "script": "https://github.com/WG170320/Resources-/raw/refs/heads/main/Mj%20Skin.zip",
+    "hero_id": "Chou"
+  },
+  {
+    "hero_name": "Helcurt",
+    "skin_name": "Kaiju of the Deep",
+    "image": "https://raw.githubusercontent.com/missnapokita/vulcan-skins/main/HCKunZla8AAm0W_.jpg",
+    "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6abf0c552b59b8ca4cbc1af3662ef176.png",
+    "script": "https://github.com/mlbb-toolkit/tikloot-bblm/raw/main/11/1100001.zip",
+    "hero_id": "Helcurt"
+  },
+  {
+    "hero_name": "Sun",
+    "skin_name": "Celestial Rebel",
+    "image": "https://raw.githubusercontent.com/missnapokita/vulcan-skins/main/HMyBfGlaAAADZcN.jpg",
+    "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+    "script": "https://github.com/mlbb-toolkit/tikloot-bblm/raw/main/11/1100001.zip",
+    "hero_id": "Sun"
+  },
+  {
+    "hero_name": "Argus",
+    "skin_name": "Raiden Maru",
+    "image": "https://raw.githubusercontent.com/missnapokita/vulcan-skins/main/HMyBYWbacAAK324.jpg",
+    "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0bd96658e5b8ec578226ea1622bd7231.png",
+    "script": "https://github.com/mlbb-toolkit/tikloot-bblm/raw/main/11/1100001.zip",
+    "hero_id": "Argus"
+  },
+  {
+    "hero_name": "Balmond",
+    "skin_name": "Vulcan Lionheart",
+    "image": "https://raw.githubusercontent.com/missnapokita/vulcan-skins/main/HJabeJMacAAw0Ag.jpg",
+    "head": "https://github.com/azizboy2007/ZongHubSCRIPT/raw/main/ICON%20BALMOND.png",
+    "script": "https://github.com/mlbb-toolkit/tikloot-bblm/raw/main/11/1100001.zip",
+    "hero_id": "Balmond"
+  },
+  {
+    "hero_name": "Chou",
+    "skin_name": "Ken",
+    "image": "https://pbs.twimg.com/media/HJaaJ4-bsAAo33Q.jpg",
+    "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_158209b180032c4564b8f3bde8c48888.png",
+    "script": "https://github.com/mlbb-toolkit/tikloot-bblm/raw/main/11/1100001.zip",
+    "hero_id": "Chou"
+  },
+  {
+    "hero_name": "Paquito",
+    "skin_name": "Ryu",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFaxRLUa90PcdIyvW6Elpsks4VR5mQHFnmo4URVsHvlykNse8mibG_EY&s=10",
+    "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e2b6d9c6d82b4a27f0bb2710c8ead3e8.png",
+    "script": "https://github.com/mlbb-toolkit/tikloot-bblm/raw/main/103/10300001.zip",
+    "hero_id": "paquito"
+  },
+  {
+    "hero_name": "Dyrroth",
+    "skin_name": "Guile",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4bPjLjOPAYtctG-hGbFzJ47_YA_IZrkRF243OByKz4_P8OUQAVKsc-SVR&s=10",
+    "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_050b3045a7fd2b37f1017557f5695ca6.png",
+    "script": "https://github.com/mlbb-toolkit/tikloot-bblm/raw/main/26/2600004.zip",
+    "hero_id": "dyrroth"
+  },
+  {
+    "hero_name": "Guinevere",
+    "skin_name": "Chun-Li",
+    "image": "https://pbs.twimg.com/media/HJaa0a0aIAE-htU?format=jpg&name=medium",
+    "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_901bdd5d4432a2c0290dfc71df615a5a.png",
+    "script": "https://github.com/mlbb-toolkit/tikloot-bblm/raw/main/13/1300001.zip",
+    "hero_id": "guinevere"
+  }
+]
