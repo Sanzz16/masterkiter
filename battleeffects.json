@@ -850,149 +850,44 @@
   ],
   "emote": [
     {
-      "name": "G -  Doge",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Doge.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20%20Doge.zip"
+      "name": "Classic",
+      "image": "https://static.wikia.nocookie.net/mobile-legends/images/2/28/Genius%21.png/revision/latest/scale-to-width-down/100?cb=20220118062722",
+      "script": "https://github.com/Maharlikoders/random-files/raw/main/emoji.zip"
     },
     {
-      "name": "G -  Geek Fam ID 2022 - Santai bro",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Geek%20Fam%20ID%202022.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20%20Geek%20Fam%20ID%202022%20-%20Santai%20bro.zip"
+      "name": "This is Lans",
+      "image": "https://raw.githubusercontent.com/missnapokita/bagong-custom-skins/main/lanspi.png",
+      "script": "https://raw.githubusercontent.com/missnapokita/bagong-custom-skins/main/lans.zip"
     },
     {
-      "name": "G -  Onic M3",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Onic.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20%20Onic%20M3.zip"
+      "name": "Paihi",
+      "image": "https://github.com/missnapokita/bagong-custom-skins/blob/main/1784465811775.png?raw=true",
+      "script": "https://github.com/missnapokita/bagong-custom-skins/raw/refs/heads/main/paihi.zip"
     },
     {
-      "name": "G - Alter Ego - Go Go Go",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Alter%20Ego.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Alter%20Ego%20-%20Go%20Go%20Go.zip"
+      "name": "Kup@l kaba?",
+      "image": "https://github.com/missnapokita/bagong-custom-skins/blob/main/file_00000000e544820b9ef9f73fde4990a8.png?raw=true",
+      "script": "https://github.com/missnapokita/Emote-ni-malupiton/raw/refs/heads/main/kupa%20kaba.zip"
     },
     {
-      "name": "G - Alter Ego ID 2021",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Alter%20Ego%20ID%202021.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Alter%20Ego%20ID%202021.zip"
+      "name": "Burger ka sakin",
+      "image": "https://i.imgur.com/qx2bbrK.png",
+      "script": "https://github.com/missnapokita/Emote-ni-malupiton/raw/refs/heads/main/burger.zip"
     },
     {
-      "name": "G - Aura Fire ID - Panik²",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Aura%20Fire%20ID.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Aura%20Fire%20ID%20-%20Panik%C2%B2.zip"
+      "name": "Boss?",
+      "image": "https://i.imgur.com/sZYatYe.png",
+      "script": "https://github.com/missnapokita/Emote-ni-malupiton/raw/refs/heads/main/shock.zip"
     },
     {
-      "name": "G - Bren eSports",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Bren%20eSports.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Bren%20eSports.zip"
+      "name": "Asar!",
+      "image": "https://github.com/missnapokita/marksman-Feb-25/blob/main/asar1.png?raw=true",
+      "script": "https://github.com/missnapokita/marksman-Feb-25/raw/refs/heads/main/asar2.zip"
     },
     {
-      "name": "G - Change Aspirant",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Chang%E2%80%99e%20Aspirant.jpeg",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Change%20Aspirant.zip"
-    },
-    {
-      "name": "G - Chou Kof - Am I Scary",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Chou%20KOF.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Chou%20Kof%20-%20Am%20I%20Scary.zip"
-    },
-    {
-      "name": "G - Echo PH 2022 - Sheesh",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Echo%20PH.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Echo%20PH%202022%20-%20Sheesh.zip"
-    },
-    {
-      "name": "G - Evos ID 2021",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Evos%20ID.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Evos%20ID%202021.zip"
-    },
-    {
-      "name": "G - Evos ID 2022 - Tutor deck",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Evos%20ID%202022.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Evos%20ID%202022%20-%20Tutor%20deck.zip"
-    },
-    {
-      "name": "G - Evos Kelazzz",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Evos.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Evos%20Kelazzz.zip"
-    },
-    {
-      "name": "G - Geek Fam ID 2021 - haha wp bro",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Geek%20Fam.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Geek%20Fam%20ID%202021%20-%20haha%20wp%20bro.zip"
-    },
-    {
-      "name": "G - Gojo Satoru - Nice Job!",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Gojo%20Saturo.jpeg",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Gojo%20Satoru%20-%20Nice%20Job!.zip"
-    },
-    {
-      "name": "G - Guinevere Kof - Feel Energetic",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Guinevere%20KOF.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Guinevere%20Kof%20-%20Feel%20Energetic.zip"
-    },
-    {
-      "name": "G - Layla Blue Spectre - Ahaha",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Blue%20Spectre.jpeg",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Layla%20Blue%20Spectre%20-%20Ahaha.zip"
-    },
-    {
-      "name": "G - Mai Shiranui - Bring it on!",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Mai%20Shiranui.jpeg",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Mai%20Shiranui%20-%20Bring%20it%20on!.zip"
-    },
-    {
-      "name": "G - Megumi - Melancholy",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Megumi%20Fushiguro.jpeg",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Megumi%20-%20Melancholy.zip"
-    },
-    {
-      "name": "G - Nana Mistbenders - La-la-la",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Nana%20Mistbender.jpeg",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Nana%20Mistbenders%20-%20La-la-la.zip"
-    },
-    {
-      "name": "G - No! No!",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/No~.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20No!%20No!.zip"
-    },
-    {
-      "name": "G - Onic ID 2022 - Ora",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Onic%20PH.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Onic%20ID%202022%20-%20Ora.zip"
-    },
-    {
-      "name": "G - Pleasant Surprise",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Pleasant%20Surprise.jpeg",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Pleasant%20Surprise.zip"
-    },
-    {
-      "name": "G - RBL ID 2022 - Rata woi",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/RBL%20ID.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20RBL%20ID%202022%20-%20Rata%20woi.zip"
-    },
-    {
-      "name": "G - RRQ Hoshi",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/RRQ.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20RRQ%20Hoshi.zip"
-    },
-    {
-      "name": "G - RRQ ID 2022 Bek bek bek",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/RRQ%202022.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20RRQ%20ID%202022%20Bek%20bek%20bek.zip"
-    },
-    {
-      "name": "G - RSG PH 2021",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/RSG%20OH.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20RSG%20PH%202021.zip"
-    },
-    {
-      "name": "G - TNC PH - Hey You I Love You",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/TNC%20PH.png",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20TNC%20PH%20-%20Hey%20You%20I%20Love%20You.zip"
-    },
-    {
-      "name": "G - Yuji Itadori - Delighted",
-      "image": "https://raw.githubusercontent.com/WG170320/Effects-Images/main/Emote/Yuji%20Itadori.jpeg",
-      "script": "https://raw.githubusercontent.com/injctr/EM0T3/main/G%20-%20Yuji%20Itadori%20-%20Delighted.zip"
+      "name": "Hapart <3",
+      "image": "https://raw.githubusercontent.com/missnapokita/marksman-Feb-25/refs/heads/main/hapart1.png",
+      "script": "https://github.com/missnapokita/marksman-Feb-25/raw/refs/heads/main/hapar2t.zip"
     }
   ],
   "elimination": [
