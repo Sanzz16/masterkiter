@@ -15777,6 +15777,18 @@
           "skin_tags": []
         }
       ]
+    },
+    {
+      "id": "lightborn_overrider",
+      "hero": "Granger",
+      "base_name": "Lightborn - Overrider",
+      "base_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyUBFv4Z3Ahq9YdN_LEfTun15PysizM7sgYTY0Rq6nT-jHxVM-4JIVJ3b8&s=10",
+      "backup_script": "https://github.com/tin0521/mm/raw/main/granger_lightborn.zip",
+      "enabled": true,
+      "skin_tags": [
+        "lightborn"
+      ],
+      "targets": []
     }
   ]
 }
