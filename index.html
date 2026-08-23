@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Warlito Admin Panel</title>
+<title>Sanzxmzz Admin Panel</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -501,6 +501,147 @@ body.modal-open{padding-bottom:0!important}
 .dataWrap{display:none;margin-top:13px}
 .dataSection.open .dataWrap{display:block}
 .dataHint{font-size:11.5px;color:var(--muted-lt);margin-top:3px;white-space:normal}
+
+/* Modern lightweight shell: one blur layer for navigation, solid surfaces for content. */
+:root{
+  --bg:#f4f7fb;
+  --card:rgba(255,255,255,.86);
+  --surface:#f7f9fc;
+  --surface-2:#f1f5f9;
+  --surface-3:#e8eef6;
+  --text:#132238;
+  --muted:#6b7a90;
+  --muted-lt:#9aa8ba;
+  --line:rgba(148,163,184,.24);
+  --line-dk:rgba(100,116,139,.34);
+  --radius:24px;
+  --radius-sm:16px;
+  --radius-lg:30px;
+  --shadow:0 12px 30px rgba(31,51,78,.07),0 1px 2px rgba(31,51,78,.05);
+  --shadow-md:0 18px 44px rgba(31,51,78,.13),0 1px 2px rgba(31,51,78,.06);
+}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(circle at 8% 0%,rgba(99,102,241,.12),transparent 30rem),
+    radial-gradient(circle at 92% 10%,rgba(14,165,233,.10),transparent 28rem),
+    var(--bg);
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background:linear-gradient(180deg,rgba(255,255,255,.34),transparent 34rem);
+}
+.app{max-width:1040px;padding:calc(env(safe-area-inset-top,0px) + 14px) 18px 112px}
+.topbar{
+  position:sticky;top:12px;z-index:120;
+  background:rgba(255,255,255,.72);border-color:rgba(255,255,255,.82);
+  border-radius:22px;padding:12px 16px;margin-bottom:18px;
+  box-shadow:0 10px 26px rgba(31,51,78,.09),inset 0 1px rgba(255,255,255,.9);
+}
+.brand h1{font-size:18px;letter-spacing:-.045em}
+.brand p{font-size:11px;font-weight:600;color:#8290a4}
+.card,.hero,.upgradeCard,.modskinCard{
+  border-color:var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+}
+.card{padding:20px;margin-bottom:16px}
+.hero{padding:16px;margin-bottom:12px}
+.title{letter-spacing:-.04em}
+.guide{border-radius:18px;box-shadow:inset 0 1px rgba(255,255,255,.7)}
+input,select,textarea{
+  border-radius:17px;border-color:var(--line);background:rgba(247,249,252,.92);
+  min-height:46px;padding:12px 15px;
+}
+input:focus,select:focus,textarea:focus{background:#fff;box-shadow:0 0 0 4px rgba(99,102,241,.11)}
+button{border-radius:999px;min-height:44px}
+button:hover{filter:brightness(1.02);transform:translateY(-1px)}
+button:active{transform:scale(.97)}
+.actions button,.toolStrip button{box-shadow:0 6px 16px rgba(31,51,78,.08)}
+.stats{gap:10px}
+.stat{border-radius:18px;background:rgba(247,249,252,.9);padding:14px}
+.stat b{font-size:25px}
+.badge{padding:6px 11px}
+.unsavedBadge{background:#fff7ed;color:#c2410c}
+.skin,.targetRow,.tagPicker,.addTagBox,.preview,.modskinPreview{border-radius:18px}
+.skin img,.upgradeHead img,.targetRow img,.modskinHead img,.modskinPreview img,.preview img{border-radius:14px}
+.modal{background:rgba(15,23,42,.48)}
+.modalBox,.loadingBox{border-radius:30px;background:rgba(255,255,255,.94);border-color:rgba(255,255,255,.8)}
+.stickyPublish,.bulkBar{
+  background:rgba(255,255,255,.76);color:var(--text);border-color:rgba(255,255,255,.82);
+}
+.stickyPublish{box-shadow:0 14px 34px rgba(31,51,78,.16)}
+.stickyPublish span{color:var(--muted)}
+.stickyPublish .btnBlue,.stickyPublish .btnGreen{color:#fff}
+.bottomNav{
+  background:rgba(255,255,255,.72);border-top:1px solid rgba(255,255,255,.85);
+  box-shadow:0 -12px 32px rgba(31,51,78,.11);padding-top:5px;
+}
+.bottomNavInner{display:flex;max-width:1040px;overflow-x:auto;padding:0 8px;scrollbar-width:none}
+.bottomNavInner::-webkit-scrollbar{display:none}
+.bnTab{flex:1 0 78px;min-height:58px;border-radius:18px;color:#7c8ba0;font-size:9px;letter-spacing:.04em}
+.bnTab.active{background:rgba(37,99,235,.10);color:var(--blue)}
+.bnTab svg{width:21px;height:21px}
+.dataToggle{box-shadow:none}
+.featureGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:10px}
+.featureGrid button{min-height:88px;border-radius:22px;padding:14px 10px}
+.featureGrid button svg{width:24px;height:24px}
+.login{margin-top:72px}
+.securityNote{display:flex;gap:8px;align-items:flex-start;margin:10px 0 2px;color:var(--muted);font-size:11px;line-height:1.5}
+.securityNote svg{width:16px;height:16px;color:var(--green);flex:0 0 auto}
+.githubConnect{margin:14px 0 16px;padding:14px 16px;border:1px solid rgba(37,99,235,.16);border-radius:20px;background:linear-gradient(135deg,rgba(239,246,255,.92),rgba(238,242,255,.72))}
+.githubConnectHead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.githubConnectTitle{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:800;color:var(--text)}
+.githubConnectTitle svg{width:18px;height:18px;color:var(--blue)}
+.githubTokenRow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px;align-items:start}
+.githubTokenRow input{margin:0;background:rgba(255,255,255,.86)}
+.githubTokenRow button{min-width:92px}
+.tokenEyeBtn{min-width:42px!important;padding:0 10px!important;display:flex;align-items:center;justify-content:center}
+.tokenEyeBtn svg{width:17px;height:17px}
+.githubStatus{font-size:11px;color:var(--muted);margin-top:7px;line-height:1.45}
+.githubStatus.ready{color:var(--green);font-weight:700}
+.githubStatus.warn{color:#b45309;font-weight:700}
+.autoPublishLabel{display:flex;align-items:center;gap:7px;margin-top:9px;font-size:11px;color:var(--muted);font-weight:700}
+.autoPublishLabel input{width:16px;min-height:16px;margin:0;accent-color:var(--blue)}
+.suggestedPicker{position:relative}
+.suggestedOptions{display:none;position:absolute;left:0;right:0;top:calc(100% - 4px);z-index:30;max-height:230px;overflow:auto;padding:7px;background:rgba(255,255,255,.96);border:1px solid rgba(99,102,241,.2);border-radius:17px;box-shadow:var(--shadow-md)}
+.suggestedOptions.open{display:grid;gap:6px}
+.suggestedOption{display:grid;grid-template-columns:42px minmax(0,1fr);align-items:center;gap:9px;width:100%;padding:7px 9px;min-height:48px;border:1px solid var(--line);border-radius:13px;background:var(--surface);color:var(--text);text-align:left;cursor:pointer}
+.suggestedOption:hover{background:var(--blue-lt);border-color:rgba(37,99,235,.3);transform:none}
+.suggestedOption img{width:42px;height:42px;object-fit:cover;border-radius:11px;background:var(--surface-3);border:1px solid var(--line)}
+.suggestedOption b,.suggestedOption span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.suggestedOption b{font-size:12px}
+.suggestedOption span{font-size:10px;color:var(--muted);margin-top:2px}
+.suggestedChoice{display:flex;align-items:center;gap:9px;margin-top:8px;padding:8px 10px;border:1px solid rgba(37,99,235,.16);border-radius:15px;background:rgba(255,255,255,.7);font-size:11px;color:var(--muted)}
+.suggestedChoice img{width:34px;height:34px;object-fit:cover;border-radius:10px;background:var(--surface-3)}
+.suggestedChoice b{color:var(--text)}
+.suggestedChoice button{margin-left:auto;min-height:28px;padding:5px 9px;font-size:10px}
+.suggestedGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.suggestedCard{display:grid;grid-template-columns:82px minmax(0,1fr);gap:12px;align-items:start;background:rgba(247,249,252,.86);border:1px solid var(--line);border-radius:20px;padding:12px}
+.suggestedCard img{width:82px;height:108px;object-fit:cover;border-radius:15px;background:var(--surface-3);border:1px solid var(--line)}
+.suggestedName{font-size:15px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.suggestedMeta{font-size:11px;color:var(--muted);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.suggestedActions{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}
+.suggestedActions button{min-height:34px;padding:7px 11px;font-size:11px}
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .topbar,.bottomNav,.stickyPublish,.bulkBar{backdrop-filter:blur(18px) saturate(135%);-webkit-backdrop-filter:blur(18px) saturate(135%)}
+}
+@media(max-width:760px){
+  .app{padding:calc(env(safe-area-inset-top,0px) + 10px) 12px calc(106px + env(safe-area-inset-bottom))}
+  .topbar{top:8px;border-radius:20px}
+  .card{padding:16px;margin-bottom:12px}
+  .featureGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .suggestedGrid{grid-template-columns:1fr}
+}
+@media(max-width:420px){
+  .app{padding-left:10px;padding-right:10px}
+  .topbar{padding:11px 13px}
+  .featureGrid button{min-height:82px}
+  .suggestedCard{grid-template-columns:68px minmax(0,1fr)}
+  .suggestedCard img{width:68px;height:92px}
+  .githubTokenRow{grid-template-columns:1fr auto}
+  .githubTokenRow input{grid-column:1 / -1}
+  .githubTokenRow button{width:100%}
+  .githubTokenRow .tokenEyeBtn{width:100%}
+}
 </style>
 </head>
 
@@ -509,7 +650,7 @@ body.modal-open{padding-bottom:0!important}
 
   <div class="topbar">
     <div class="brand">
-      <h1 id="topbarTitle">Warlito Admin</h1>
+      <h1 id="topbarTitle">Sanzxmzz Admin</h1>
       <p id="topbarSub">Dashboard</p>
     </div>
     <button class="btnDark" style="min-height:38px;padding:8px 14px;font-size:12px" onclick="reloadAll()">
@@ -527,8 +668,18 @@ body.modal-open{padding-bottom:0!important}
       <div style="font-size:12px;color:var(--muted)">Bisaya Admin</div>
     </div>
     <input id="password" type="password" placeholder="Admin password" autocomplete="current-password">
-    <input id="token" type="password" placeholder="GitHub token" autocomplete="off">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center">
+      <input id="token" type="password" placeholder="GitHub token (optional — bisa Apply di dashboard)" autocomplete="off" style="margin:0">
+      <button type="button" class="btnDark tokenEyeBtn" id="loginTokenEyeBtn" onclick="toggleTokenVisibility('token','loginTokenEyeBtn')" title="Show/Hide token">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      </button>
+    </div>
+    <div class="securityNote">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><path d="M12 15v2"/></svg>
+      <span>Token hanya dipakai browser ini untuk membaca dan menyimpan JSON ke GitHub. Jangan taruh token di file HTML atau bagikan ke orang lain.</span>
+    </div>
     <button class="btnBlue" style="width:100%;margin-top:4px;min-height:46px" onclick="login()">Enter Dashboard</button>
+    <button class="btnDark" style="width:100%;margin-top:8px" onclick="testGitHubConnection()">Test GitHub Connection</button>
     <button class="btnDark" style="width:100%;margin-top:8px" onclick="resetLoginForm()">Reset Saved Login</button>
   </div>
 
@@ -538,7 +689,23 @@ body.modal-open{padding-bottom:0!important}
 
     <div class="card cut cardGlow">
       <div class="title" style="display:flex;align-items:center;gap:8px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Welcome, Admin!</div>
-      <div class="guide">
+       <div class="githubConnect">
+         <div class="githubConnectHead">
+           <div class="githubConnectTitle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.2 0 6.5-1.6 6.5-7A5.4 5.4 0 0 0 19 3.7 5 5 0 0 0 18.9 0S17.7-.4 15 1.4a13.4 13.4 0 0 0-6 0C6.3-.4 5.1 0 5.1 0A5 5 0 0 0 5 3.7 5.4 5.4 0 0 0 3.5 7.5c0 5.4 3.3 7 6.5 7a4.8 4.8 0 0 0-1 3.5v4"/><path d="M9 18c-4.5 2-5-2-7-2"/></svg>GitHub Connection</div>
+           <span id="githubTokenBadge" class="badge badgeRed">Not applied</span>
+         </div>
+         <div class="small">Masukkan token dengan akses <b>Contents: Read and write</b>. Setelah Apply, tombol Publish akan langsung memakai token ini untuk update repository.</div>
+         <div class="githubTokenRow" style="margin-top:9px">
+           <input id="dashboardGithubToken" type="password" placeholder="Paste GitHub token di sini" autocomplete="off" onkeydown="if(event.key==='Enter') applyGitHubToken()">
+           <button type="button" class="btnDark tokenEyeBtn" id="dashboardTokenEyeBtn" onclick="toggleTokenVisibility('dashboardGithubToken','dashboardTokenEyeBtn')" title="Show/Hide token">
+             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+           </button>
+           <button class="btnBlue" onclick="applyGitHubToken()">Apply</button>
+         </div>
+         <div id="githubStatus" class="githubStatus">Belum ada token aktif.</div>
+         <label class="autoPublishLabel"><input id="autoPublish" type="checkbox" onchange="toggleAutoPublish(this.checked)"> Auto-publish setelah perubahan disimpan</label>
+       </div>
+       <div class="guide">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
         <div class="gtext">
           Ito ang control panel ng app. Lahat ng binago mo dito ay <b>naka-save muna sa device mo</b> — hindi pa ito nakikita ng users hangga't hindi mo pinindot ang <b>Publish</b>.
@@ -560,7 +727,8 @@ body.modal-open{padding-bottom:0!important}
       </div>
       <div class="badges">
         <span id="saveStatus" class="badge badgeGreen">Saved</span>
-        <span id="tagStatus" class="badge badgePurple">Tags: 0</span>
+       <span id="tagStatus" class="badge badgePurple">Tags: 0</span>
+       <span id="suggestedStatus" class="badge badgeBlue">Suggested: 0</span>
       </div>
       <div class="actions" style="grid-template-columns:1fr 1fr">
         <button class="btnGreen" onclick="publishChanges()">
@@ -572,11 +740,17 @@ body.modal-open{padding-bottom:0!important}
           Preview
         </button>
       </div>
+      <div class="actions" style="grid-template-columns:1fr;margin-top:0">
+        <button class="btnGreen" onclick="publishAllChanges()" style="font-size:12px;background:#059669">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><polyline points="21 4 21 10 15 10"/></svg>
+          Publish All Changes
+        </button>
+      </div>
       <div class="actions" style="grid-template-columns:1fr 1fr;margin-top:0">
         <button class="btnDark" onclick="discardChanges()" style="font-size:12px">Discard / Reload</button>
         <button class="btnDark" onclick="logout()" style="font-size:12px">Logout</button>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px">
+       <div class="featureGrid">
         <button class="btnBlue" style="flex-direction:column;height:auto;padding:14px 10px;min-height:72px;border-radius:var(--radius-sm)" onclick="showUpgradePage()">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
           <span style="font-size:11px;font-weight:700;margin-top:5px">Upgrade Skins</span>
@@ -608,6 +782,10 @@ body.modal-open{padding-bottom:0!important}
         <button style="flex-direction:column;height:auto;padding:14px 10px;min-height:72px;background:#dc2626;color:white;box-shadow:0 2px 8px rgba(220,38,38,.3);border-radius:var(--radius-sm);border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-family:inherit;transition:opacity .15s,transform .1s" onclick="showYTPage()">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg>
           <span style="font-size:11px;font-weight:700;margin-top:5px">YouTube / Dialog</span>
+        </button>
+        <button class="btnBlue" style="flex-direction:column;height:auto;padding:14px 10px;min-height:72px;border-radius:var(--radius-sm)" onclick="showSuggestedPage()">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+          <span style="font-size:11px;font-weight:700;margin-top:5px">Suggested</span>
         </button>
       </div>
     </div>
@@ -725,6 +903,102 @@ body.modal-open{padding-bottom:0!important}
       </div>
     </div>
 
+    </div>
+
+    <div id="heroPage" class="hidden">
+      <div class="card cut cardGlow">
+        <div class="title">Hero Manager</div>
+        <div class="actions" style="grid-template-columns:1fr 1fr">
+          <button class="btnDark" onclick="showDashboardPage()">← Back to Dashboard</button>
+          <button class="btnGreen" onclick="publishChanges()">Publish Changes</button>
+        </div>
+      </div>
+      <div class="card cut cardGlow">
+        <div class="title">+ Add Hero</div>
+        <div class="row">
+          <input id="heroPageNewName" placeholder="Hero name">
+          <select id="heroPageNewCategory">
+            <option value="assassin">Assassin</option>
+            <option value="fighter">Fighter</option>
+            <option value="mage">Mage</option>
+            <option value="marksman">Marksman</option>
+            <option value="tank">Tank</option>
+            <option value="support">Support</option>
+          </select>
+        </div>
+        <button class="btnGreen" onclick="addHeroFromHeroPage()">Add Hero</button>
+      </div>
+      <div class="card cut">
+        <div class="title">Search & Filter</div>
+        <div class="toolbar">
+          <input id="heroPageSearch" placeholder="Search hero name, id, category..." oninput="renderHeroPage()">
+          <select id="heroPageFilterCategory" onchange="renderHeroPage()">
+            <option value="all">All Categories</option>
+            <option value="assassin">Assassin</option>
+            <option value="fighter">Fighter</option>
+            <option value="mage">Mage</option>
+            <option value="marksman">Marksman</option>
+            <option value="tank">Tank</option>
+            <option value="support">Support</option>
+          </select>
+          <select id="heroPageFilterStatus" onchange="renderHeroPage()">
+            <option value="all">All Status</option>
+            <option value="enabled">Enabled</option>
+            <option value="disabled">Disabled</option>
+          </select>
+        </div>
+      </div>
+      <div class="card cut">
+        <div class="stats">
+          <div class="stat cut"><span>Heroes</span><b id="heroPageStatHeroes">0</b></div>
+          <div class="stat cut"><span>Skins</span><b id="heroPageStatSkins">0</b></div>
+          <div class="stat cut"><span>Enabled</span><b id="heroPageStatEnabled">0</b></div>
+        </div>
+      </div>
+      <div class="card cut">
+        <div id="heroPageList" class="grid"></div>
+      </div>
+    </div>
+
+    <div id="skinsPage" class="hidden">
+      <div class="card cut cardGlow">
+        <div class="title">Skins Manager</div>
+        <div class="actions" style="grid-template-columns:1fr 1fr">
+          <button class="btnDark" onclick="showDashboardPage()">← Back to Dashboard</button>
+          <button class="btnGreen" onclick="publishChanges()">Publish Changes</button>
+        </div>
+      </div>
+      <div class="card cut">
+        <div class="title">Search & Filter</div>
+        <div class="toolbar">
+          <input id="skinsPageSearch" placeholder="Search skin, hero, tag, URL..." oninput="renderSkinsPage()">
+          <select id="skinsPageFilterCategory" onchange="renderSkinsPage()">
+            <option value="all">All Categories</option>
+            <option value="assassin">Assassin</option>
+            <option value="fighter">Fighter</option>
+            <option value="mage">Mage</option>
+            <option value="marksman">Marksman</option>
+            <option value="tank">Tank</option>
+            <option value="support">Support</option>
+          </select>
+          <select id="skinsPageFilterStatus" onchange="renderSkinsPage()">
+            <option value="all">All Status</option>
+            <option value="featured">Featured</option>
+            <option value="enabled">Enabled</option>
+            <option value="disabled">Disabled</option>
+          </select>
+        </div>
+      </div>
+      <div class="card cut">
+        <div class="stats">
+          <div class="stat cut"><span>Total Skins</span><b id="skinsPageStatTotal">0</b></div>
+          <div class="stat cut"><span>Enabled</span><b id="skinsPageStatEnabled">0</b></div>
+          <div class="stat cut"><span>Featured</span><b id="skinsPageStatFeatured">0</b></div>
+        </div>
+      </div>
+      <div class="card cut">
+        <div id="skinsPageList" class="grid"></div>
+      </div>
     </div>
 
     <div id="upgradePage" class="hidden">
@@ -1147,6 +1421,48 @@ body.modal-open{padding-bottom:0!important}
       </div>
     </div>
 
+    <div id="suggestedPage" class="hidden">
+      <div class="card cut cardGlow">
+        <div class="title">Suggested Manager</div>
+        <div class="badges">
+          <span id="suggestedPageStatus" class="badge badgeBlue">Items: 0</span>
+          <span class="badge badgePurple">suggested.json</span>
+        </div>
+        <div class="guide blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3z"/></svg>
+          <div class="gtext"><b>Suggested</b> menyimpan rekomendasi skin untuk app. Tambahkan item, cek preview, lalu <b>Publish Changes</b> agar update masuk ke GitHub.</div>
+        </div>
+        <div class="actions" style="grid-template-columns:1fr 1fr">
+          <button class="btnDark" onclick="showDashboardPage()">← Back to Dashboard</button>
+          <button class="btnGreen" onclick="publishChanges()">Publish Changes</button>
+        </div>
+      </div>
+
+      <div class="card cut cardGlow">
+        <div class="title">Manage Suggestions</div>
+        <div class="toolbar">
+          <input id="suggestedSearch" placeholder="Search hero, skin, image..." oninput="renderSuggested()">
+          <button class="btnGreen" onclick="openSuggestedModal()">+ Add Suggestion</button>
+          <button class="btnDark" onclick="loadSuggested()">Reload suggested.json</button>
+        </div>
+        <div id="suggestedSection" class="dataSection open">
+          <div class="dataHead" onclick="toggleData('suggested')">
+            <div class="dhTitle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3z"/></svg>Suggestion List</div>
+            <button class="dataToggle" type="button"><span id="suggestedLbl">Hide</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+          </div>
+          <div class="dataWrap">
+            <div id="suggestedList" class="suggestedGrid"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card cut">
+        <div class="title">Suggested JSON</div>
+        <div class="small">Format mengikuti file existing: <b>hero_name</b>, <b>skin_name</b>, <b>image</b>, <b>head</b>, <b>script</b>, dan <b>hero_id</b>.</div>
+        <div class="toolStrip"><button class="btnDark" onclick="downloadSuggested()">Download JSON</button></div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -1155,6 +1471,14 @@ body.modal-open{padding-bottom:0!important}
     <button class="bnTab active" id="bnHome" onclick="showDashboardPage()">
       <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       Home
+    </button>
+    <button class="bnTab" id="bnSkins" onclick="showSkinsPage()">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      Skins
+    </button>
+    <button class="bnTab" id="bnHero" onclick="showHeroPage()">
+      <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      Hero
     </button>
     <button class="bnTab" id="bnUpgrade" onclick="showUpgradePage()">
       <svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
@@ -1183,6 +1507,10 @@ body.modal-open{padding-bottom:0!important}
     <button class="bnTab" id="bnYT" onclick="showYTPage()">
       <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
       YT
+    </button>
+    <button class="bnTab" id="bnSuggested" onclick="showSuggestedPage()">
+      <svg viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3z"/></svg>
+      Suggested
     </button>
   </div>
 </nav>
@@ -1518,6 +1846,41 @@ body.modal-open{padding-bottom:0!important}
   </div>
 </div>
 
+<div class="modal" id="suggestedModal">
+  <div class="modalBox cut">
+    <div class="title" id="suggestedModalTitle">Add Suggested Skin</div>
+    <div class="small">Cari hero dari <b>heroes.json</b>, atau ketik manual untuk hero/skin custom yang belum ada di database.</div>
+    <div class="suggestedPicker" style="margin-top:7px">
+      <input id="suggestedHeroSearch" placeholder="Search hero name..." autocomplete="off" oninput="renderSuggestedHeroOptions()" onfocus="renderSuggestedHeroOptions()">
+      <div id="suggestedHeroOptions" class="suggestedOptions"></div>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <input id="suggestedHeroName" data-required="Hero name" placeholder="Hero name (ketik manual jika custom)" oninput="onSuggestedHeroNameInput()">
+      <input id="suggestedHeroId" placeholder="Hero ID (auto dari nama, bisa diedit)" oninput="this.dataset.userEdited='1'; updateSuggestedPreview()">
+    </div>
+    <div class="small" style="margin-top:4px;color:var(--muted)">Pilih hero dari pencarian di atas, atau ketik langsung nama, ID, dan gambar head untuk hero/skin custom yang belum ada di heroes.json.</div>
+    <div id="suggestedHeroChoice" class="suggestedChoice" style="display:none"></div>
+    <div class="small" style="margin-top:10px">Nama skin</div>
+    <div class="suggestedPicker" style="margin-top:5px">
+      <input id="suggestedSkinName" data-required="Skin name" placeholder="Search or type skin name..." autocomplete="off" oninput="renderSuggestedSkinOptions()" onfocus="renderSuggestedSkinOptions()">
+      <div id="suggestedSkinOptions" class="suggestedOptions"></div>
+    </div>
+    <input id="suggestedImage" data-required="Image URL" placeholder="Skin image URL" oninput="debounceImageTest('suggestedImage','suggestedImageStatus'); updateSuggestedPreview()">
+    <div id="suggestedImageStatus" class="urlStatus">Image tester ready.</div>
+    <input id="suggestedHead" placeholder="Hero head image URL (bisa diketik manual)" oninput="debounceImageTest('suggestedHead','suggestedHeadStatus'); updateSuggestedPreview()">
+    <div id="suggestedHeadStatus" class="urlStatus">Image tester ready.</div>
+    <input id="suggestedScript" data-required="Script URL" placeholder="Script ZIP URL">
+    <div class="preview cut">
+      <img id="suggestedPreviewImg" src="" alt="Preview" onerror="this.style.display='none'" onload="this.style.display='block'">
+      <div><b id="suggestedPreviewTitle">Suggestion preview</b><div class="small" id="suggestedPreviewMeta">Paste an image URL to preview.</div></div>
+    </div>
+    <div class="actions">
+      <button class="btnGreen" onclick="saveSuggestedModal()">Save Suggestion</button>
+      <button class="btnDark" onclick="closeSuggestedModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
 <div class="loading" id="loading">
   <div class="loadingBox cut">
     <div class="loader"></div>
@@ -1539,8 +1902,8 @@ body.modal-open{padding-bottom:0!important}
 <div class="toast cut" id="toast"></div>
 
 <script>
-const PASS = "123456";
-const OWNER = "missnapokita";
+const PASS = "Sanzxmzz1945";
+const OWNER = "Sanzz16";
 const REPO = "masterkiter";
 const FILE = "skins.json";
 const TAG_FILE = "tags.json";
@@ -1551,6 +1914,11 @@ const BATTLE_EFFECTS_FILE = "battleeffects.json";
 const BRANCH = "main";
 const CATEGORIES = ["assassin","fighter","mage","marksman","tank","support"];
 const API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE}`;
+const REPO_API = `https://api.github.com/repos/${OWNER}/${REPO}`;
+const DATA_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/refs/heads/${BRANCH}/${FILE}`;
+const HERO_FILE = "heroes.json";
+const HERO_API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${HERO_FILE}`;
+const HERO_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/refs/heads/${BRANCH}/${HERO_FILE}`;
 const TAG_API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${TAG_FILE}`;
 const UPGRADE_API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${UPGRADE_FILE}`;
 const MODSKIN_API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${MODSKIN_FILE}`;
@@ -1573,6 +1941,9 @@ const NEWS_API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${NEWS_
 const NEWS_TAGS = ["NEW SKIN","NEW FEATURE","UPDATE","FIX"];
 const YT_FILE = "youtube.json";
 const YT_API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${YT_FILE}`;
+const SUGGESTED_FILE = "suggested.json";
+const SUGGESTED_API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${SUGGESTED_FILE}`;
+const SUGGESTED_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/refs/heads/${BRANCH}/${SUGGESTED_FILE}`;
 
 let TOKEN = "";
 let SHA = "";
@@ -1637,6 +2008,14 @@ let YT_DATA = {
 };
 let YT_ORIGINAL = null;
 let currentGroupsCategory = "recall";
+let dirtySuggested = false;
+let SUGGESTED_SHA = "";
+let SUGGESTED_DATA = [];
+let SUGGESTED_ORIGINAL = [];
+let currentSuggestedEditIndex = null;
+let HERO_DATABASE = [];
+let SUGGESTED_HERO_OPTIONS = [];
+let SUGGESTED_SKIN_OPTIONS = [];
 let collapsedUpgrades = {};
 let currentUpgradeBaseIndex = null;
 let currentUpgradeTargetIndex = null;
@@ -1647,6 +2026,8 @@ let currentEditHeroIndex = null;
 let currentSelectedTags = [];
 let collapsed = {};
 let isBusy = false;
+let autoPublishEnabled = localStorage.getItem("Sanzxmzz_auto_publish") === "true";
+let autoPublishTimer = null;
 
 function setBusy(state,text){
   isBusy = state;
@@ -1677,6 +2058,7 @@ function markDirty(){
     s.innerText = "Unsaved Changes";
     s.className = "badge unsavedBadge";
   }
+  queueAutoPublish();
 }
 
 function markSaved(){
@@ -1686,6 +2068,27 @@ function markSaved(){
     s.innerText = "Saved";
     s.className = "badge badgeGreen";
   }
+}
+
+function markSuggestedDirty(){
+  dirtySuggested = true;
+  const s = document.getElementById("saveStatus");
+  if(s){ s.innerText = "Unsaved Changes"; s.className = "badge unsavedBadge"; }
+  updateSuggestedStatus();
+  queueAutoPublish();
+}
+
+function markSuggestedSaved(){
+  dirtySuggested = false;
+  updateSuggestedStatus();
+}
+
+function updateSuggestedStatus(){
+  const text = "Suggested: " + SUGGESTED_DATA.length + (dirtySuggested ? " *" : "");
+  ["suggestedStatus","suggestedPageStatus"].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.innerText = id === "suggestedPageStatus" ? "Items: " + SUGGESTED_DATA.length + (dirtySuggested ? " *" : "") : text;
+   });
 }
 
 function markTagsDirty(){
@@ -1699,6 +2102,7 @@ function markTagsDirty(){
   if(ts) ts.innerText = "Tags: " + TAG_DATABASE.length + " *";
   const ms = document.getElementById("skinTagManagerStatus");
   if(ms) ms.innerText = "Tags: " + TAG_DATABASE.length + " *";
+  queueAutoPublish();
 }
 
 function markTagsSaved(){
@@ -1717,6 +2121,7 @@ function markUpgradeDirty(){
     s.className = "badge unsavedBadge";
   }
   updateUpgradeBadges();
+  queueAutoPublish();
 }
 
 function markUpgradeSaved(){
@@ -1733,6 +2138,7 @@ function markBEDirty(){
   const s = document.getElementById("saveStatus");
   if(s){ s.innerText = "Unsaved Changes"; s.className = "badge unsavedBadge"; }
   updateBEStatus();
+  queueAutoPublish();
 }
 function markBESaved(){
   dirtyBE = false;
@@ -2092,6 +2498,7 @@ function markCarouselDirty(){
   const s = document.getElementById("saveStatus");
   if(s){ s.innerText = "Unsaved Changes"; s.className = "badge unsavedBadge"; }
   updateCarouselStatus();
+  queueAutoPublish();
 }
 function markCarouselSaved(){
   dirtyCarousel = false;
@@ -2257,6 +2664,7 @@ function markNewsDirty(){
   const s = document.getElementById("saveStatus");
   if(s){ s.innerText = "Unsaved Changes"; s.className = "badge unsavedBadge"; }
   updateNewsStatus();
+  queueAutoPublish();
 }
 function markNewsSaved(){
   dirtyNews = false;
@@ -2442,6 +2850,7 @@ function markYTDirty(){
   const s = document.getElementById("saveStatus");
   if(s){ s.innerText = "Unsaved Changes"; s.className = "badge unsavedBadge"; }
   updateYTStatus();
+  queueAutoPublish();
 }
 function markYTSaved(){
   dirtyYT = false;
@@ -2598,6 +3007,7 @@ function markBannersDirty(){
   dirtyBanners = true;
   const s = document.getElementById("saveStatus");
   if(s){ s.innerText = "Unsaved Changes"; s.className = "badge unsavedBadge"; }
+  queueAutoPublish();
 }
 function markBannersSaved(){ dirtyBanners = false; }
 
@@ -2660,6 +3070,7 @@ function markGroupsDirty(){
   dirtyGroups = true;
   const s = document.getElementById("saveStatus");
   if(s){ s.innerText = "Unsaved Changes"; s.className = "badge unsavedBadge"; }
+  queueAutoPublish();
 }
 function markGroupsSaved(){ dirtyGroups = false; }
 
@@ -2776,90 +3187,74 @@ function hideBEPage(){ const p=document.getElementById("battleEffectsPage"); if(
 function hideCarouselPage(){ const p=document.getElementById("carouselPage"); if(p) p.classList.add("hidden"); }
 function hideNewsPage(){ const p=document.getElementById("newsPage"); if(p) p.classList.add("hidden"); }
 function hideYTPage(){ const p=document.getElementById("ytPage"); if(p) p.classList.add("hidden"); }
+function hideSuggestedPage(){ const p=document.getElementById("suggestedPage"); if(p) p.classList.add("hidden"); }
+function hideMemePage(){ const page=document.getElementById("memePage"); if(page) page.classList.add("hidden"); }
+function hideHeroPage(){ const p=document.getElementById("heroPage"); if(p) p.classList.add("hidden"); }
+function hideSkinsPage(){ const p=document.getElementById("skinsPage"); if(p) p.classList.add("hidden"); }
+
+function hideAllPages(){
+  const ids=["dashboardPage","heroPage","skinsPage","upgradePage","modskinPage","memePage","skinTagPage","battleEffectsPage","carouselPage","newsPage","ytPage","suggestedPage"];
+  ids.forEach(id=>{ const p=document.getElementById(id); if(p) p.classList.add("hidden"); });
+}
 
 function setActiveTab(id){
-  var labels={'bnHome':'Dashboard','bnUpgrade':'Upgrade Skins','bnModskin':'Custom Skins','bnTags':'Skin Tags','bnEffects':'Battle Effects','bnCarousel':'Carousel','bnNews':"What's New",'bnYT':'YouTube / Sponsor'};
-  ['bnHome','bnUpgrade','bnModskin','bnTags','bnEffects','bnCarousel','bnNews','bnYT'].forEach(function(t){
+  var labels={'bnHome':'Dashboard','bnSkins':'Skins','bnHero':'Hero','bnUpgrade':'Upgrade Skins','bnModskin':'Custom Skins','bnTags':'Skin Tags','bnEffects':'Battle Effects','bnCarousel':'Carousel','bnNews':"What's New",'bnYT':'YouTube / Sponsor','bnSuggested':'Suggested'};
+  ['bnHome','bnSkins','bnHero','bnUpgrade','bnModskin','bnTags','bnEffects','bnCarousel','bnNews','bnYT','bnSuggested'].forEach(function(t){
     var el=document.getElementById(t); if(el) el.classList.remove('active');
   });
   var a=document.getElementById(id); if(a) a.classList.add('active');
   var sub=document.getElementById('topbarSub'); if(sub) sub.textContent=labels[id]||'Dashboard';
 }
 
+function showHeroPage(){
+  hideAllPages();
+  document.getElementById("heroPage").classList.remove("hidden");
+  setActiveTab('bnHero');
+  renderHeroPage();
+  window.scrollTo(0,0);
+}
+
+function showSkinsPage(){
+  hideAllPages();
+  document.getElementById("skinsPage").classList.remove("hidden");
+  setActiveTab('bnSkins');
+  renderSkinsPage();
+  window.scrollTo(0,0);
+}
+
 function showUpgradePage(){
-  hideMemePage();
-  document.getElementById("dashboardPage").classList.add("hidden");
+  hideAllPages();
   document.getElementById("upgradePage").classList.remove("hidden");
-  document.getElementById("modskinPage").classList.add("hidden");
-  const tagPage=document.getElementById("skinTagPage"); if(tagPage) tagPage.classList.add("hidden");
-  hideBEPage();
-  hideCarouselPage();
-  hideNewsPage();
-  hideYTPage();
   setActiveTab('bnUpgrade');
   renderUpgrades();
   window.scrollTo(0,0);
 }
 
 function showModskinPage(){
-  hideMemePage();
-  document.getElementById("dashboardPage").classList.add("hidden");
-  document.getElementById("upgradePage").classList.add("hidden");
+  hideAllPages();
   document.getElementById("modskinPage").classList.remove("hidden");
-  const tagPage=document.getElementById("skinTagPage"); if(tagPage) tagPage.classList.add("hidden");
-  hideBEPage();
-  hideCarouselPage();
-  hideNewsPage();
-  hideYTPage();
   setActiveTab('bnModskin');
   renderModskins();
   window.scrollTo(0,0);
 }
 
-
-function hideMemePage(){
-  const page=document.getElementById("memePage");
-  if(page) page.classList.add("hidden");
-}
-
 function showMemePage(){
-  document.getElementById("dashboardPage").classList.add("hidden");
-  document.getElementById("upgradePage").classList.add("hidden");
-  document.getElementById("modskinPage").classList.add("hidden");
-  const tagPage=document.getElementById("skinTagPage"); if(tagPage) tagPage.classList.add("hidden");
-  hideBEPage();
-  hideCarouselPage();
-  hideNewsPage();
-  hideYTPage();
+  hideAllPages();
   document.getElementById("memePage").classList.remove("hidden");
   renderMemes();
   window.scrollTo(0,0);
 }
 
 function showSkinTagPage(){
-  hideMemePage();
-  document.getElementById("dashboardPage").classList.add("hidden");
-  document.getElementById("upgradePage").classList.add("hidden");
-  document.getElementById("modskinPage").classList.add("hidden");
+  hideAllPages();
   const tagPage=document.getElementById("skinTagPage"); if(tagPage) tagPage.classList.remove("hidden");
-  hideBEPage();
-  hideCarouselPage();
-  hideNewsPage();
-  hideYTPage();
   setActiveTab('bnTags');
   renderSkinTagManager();
   window.scrollTo(0,0);
 }
 
 function showBattleEffectsPage(){
-  hideMemePage();
-  document.getElementById("dashboardPage").classList.add("hidden");
-  document.getElementById("upgradePage").classList.add("hidden");
-  document.getElementById("modskinPage").classList.add("hidden");
-  const tagPage=document.getElementById("skinTagPage"); if(tagPage) tagPage.classList.add("hidden");
-  hideCarouselPage();
-  hideNewsPage();
-  hideYTPage();
+  hideAllPages();
   document.getElementById("battleEffectsPage").classList.remove("hidden");
   setActiveTab('bnEffects');
   renderBattleEffects();
@@ -2867,14 +3262,7 @@ function showBattleEffectsPage(){
 }
 
 function showCarouselPage(){
-  hideMemePage();
-  document.getElementById("dashboardPage").classList.add("hidden");
-  document.getElementById("upgradePage").classList.add("hidden");
-  document.getElementById("modskinPage").classList.add("hidden");
-  const tagPage=document.getElementById("skinTagPage"); if(tagPage) tagPage.classList.add("hidden");
-  hideBEPage();
-  hideNewsPage();
-  hideYTPage();
+  hideAllPages();
   document.getElementById("carouselPage").classList.remove("hidden");
   setActiveTab('bnCarousel');
   renderCarousel();
@@ -2882,14 +3270,7 @@ function showCarouselPage(){
 }
 
 function showNewsPage(){
-  hideMemePage();
-  document.getElementById("dashboardPage").classList.add("hidden");
-  document.getElementById("upgradePage").classList.add("hidden");
-  document.getElementById("modskinPage").classList.add("hidden");
-  const tagPage=document.getElementById("skinTagPage"); if(tagPage) tagPage.classList.add("hidden");
-  hideBEPage();
-  hideCarouselPage();
-  hideYTPage();
+  hideAllPages();
   document.getElementById("newsPage").classList.remove("hidden");
   setActiveTab('bnNews');
   renderNews();
@@ -2897,29 +3278,23 @@ function showNewsPage(){
 }
 
 function showYTPage(){
-  hideMemePage();
-  document.getElementById("dashboardPage").classList.add("hidden");
-  document.getElementById("upgradePage").classList.add("hidden");
-  document.getElementById("modskinPage").classList.add("hidden");
-  const tagPage=document.getElementById("skinTagPage"); if(tagPage) tagPage.classList.add("hidden");
-  hideBEPage();
-  hideCarouselPage();
-  hideNewsPage();
+  hideAllPages();
   document.getElementById("ytPage").classList.remove("hidden");
   setActiveTab('bnYT');
   renderYT();
   window.scrollTo(0,0);
 }
 
+function showSuggestedPage(){
+  hideAllPages();
+  document.getElementById("suggestedPage").classList.remove("hidden");
+  setActiveTab('bnSuggested');
+  renderSuggested();
+  window.scrollTo(0,0);
+}
+
 function showDashboardPage(){
-  hideMemePage();
-  document.getElementById("upgradePage").classList.add("hidden");
-  document.getElementById("modskinPage").classList.add("hidden");
-  const tagPage=document.getElementById("skinTagPage"); if(tagPage) tagPage.classList.add("hidden");
-  hideBEPage();
-  hideCarouselPage();
-  hideNewsPage();
-  hideYTPage();
+  hideAllPages();
   document.getElementById("dashboardPage").classList.remove("hidden");
   setActiveTab('bnHome');
   render();
@@ -2927,24 +3302,25 @@ function showDashboardPage(){
 }
 
 function resetLoginForm(){
-  localStorage.removeItem("warlito_pass");
-  localStorage.removeItem("warlito_token");
+  localStorage.removeItem("Sanzxmzz_pass");
+  localStorage.removeItem("Sanzxmzz_token");
   TOKEN = "";
   document.getElementById("password").value = "";
   document.getElementById("token").value = "";
   document.getElementById("panel").classList.add("hidden");
   document.getElementById("loginCard").classList.remove("hidden");
+  syncGitHubTokenUI();
   showToast("Saved login reset.");
 }
 
 function saveLogin(){
-  localStorage.setItem("warlito_pass",document.getElementById("password").value.trim());
-  localStorage.setItem("warlito_token",TOKEN);
+  localStorage.setItem("Sanzxmzz_pass",document.getElementById("password").value.trim());
+  localStorage.setItem("Sanzxmzz_token",TOKEN);
 }
 
 function clearSavedLogin(){
-  localStorage.removeItem("warlito_pass");
-  localStorage.removeItem("warlito_token");
+  localStorage.removeItem("Sanzxmzz_pass");
+  localStorage.removeItem("Sanzxmzz_token");
   showToast("Saved login cleared.");
 }
 
@@ -2952,6 +3328,99 @@ function logout(){
   document.getElementById("panel").classList.add("hidden");
   document.getElementById("loginCard").classList.remove("hidden");
   const bn=document.getElementById("bottomNav"); if(bn) bn.style.display="none";
+}
+
+function hasUnsavedChanges(){
+  return dirty || dirtyTags || dirtyUpgrade || dirtyModskin || dirtyMeme || dirtyBE || dirtyBanners || dirtyGroups || dirtyCarousel || dirtyNews || dirtyYT || dirtySuggested;
+}
+
+function toggleTokenVisibility(inputId,btnId){
+  const input=document.getElementById(inputId);
+  const btn=document.getElementById(btnId);
+  if(!input) return;
+  const showing=input.type==="text";
+  input.type=showing?"password":"text";
+  if(btn) btn.innerHTML=showing
+    ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`
+    : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a21.8 21.8 0 0 1 5.06-6.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a21.7 21.7 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>`;
+}
+
+function syncGitHubTokenUI(){
+  const dashboardInput=document.getElementById("dashboardGithubToken");
+  const loginInput=document.getElementById("token");
+  if(dashboardInput && document.activeElement!==dashboardInput) dashboardInput.value=TOKEN||"";
+  if(loginInput && document.activeElement!==loginInput) loginInput.value=TOKEN||"";
+  const badge=document.getElementById("githubTokenBadge");
+  const status=document.getElementById("githubStatus");
+  const checkbox=document.getElementById("autoPublish");
+  if(checkbox) checkbox.checked=autoPublishEnabled && !!TOKEN;
+  if(TOKEN){
+    if(badge){ badge.innerText="Applied"; badge.className="badge badgeGreen"; }
+    if(status){ status.innerText=`Active token • ${OWNER}/${REPO} • ready to read and publish`; status.className="githubStatus ready"; }
+  }else{
+    if(badge){ badge.innerText="Not applied"; badge.className="badge badgeRed"; }
+    if(status){ status.innerText="Belum ada token aktif. Isi token lalu tekan Apply."; status.className="githubStatus warn"; }
+  }
+}
+
+async function applyGitHubToken(){
+  const dashboardInput=document.getElementById("dashboardGithubToken");
+  const loginInput=document.getElementById("token");
+  const token=(dashboardInput?.value||loginInput?.value||"").trim();
+  if(!token){ showToast("Isi GitHub token dulu"); return; }
+
+  const apply=async()=>{
+    try{
+      setBusy(true,"Checking GitHub token...");
+      const res=await fetch(REPO_API,{headers:{"Authorization":`Bearer ${token}`,"Accept":"application/vnd.github+json"},cache:"no-store"});
+      const data=await res.json();
+      if(!res.ok) throw new Error(data.message||"GitHub rejected the token");
+      TOKEN=token;
+      localStorage.setItem("Sanzxmzz_token",TOKEN);
+      syncGitHubTokenUI();
+      showToast(data.permissions?.push===true?"Token applied. Write access is ready.":"Token applied, but write access was not detected.");
+      await loadData();
+    }catch(e){
+      syncGitHubTokenUI();
+      showToast("Token gagal diterapkan: "+e.message);
+    }finally{
+      setBusy(false);
+    }
+  };
+
+  if(hasUnsavedChanges()) showConfirm("Apply GitHub Token","Reload data terbaru dari GitHub? Perubahan lokal yang belum dipublish akan dibuang.",apply);
+  else await apply();
+}
+
+function toggleAutoPublish(enabled){
+  if(enabled && !TOKEN){
+    const checkbox=document.getElementById("autoPublish"); if(checkbox) checkbox.checked=false;
+    showToast("Apply GitHub token dulu sebelum Auto-publish.");
+    return;
+  }
+  autoPublishEnabled=!!enabled;
+  localStorage.setItem("Sanzxmzz_auto_publish",String(autoPublishEnabled));
+  showToast(autoPublishEnabled?"Auto-publish enabled.":"Auto-publish disabled.");
+}
+
+function queueAutoPublish(){
+  if(!autoPublishEnabled || !TOKEN || isBusy) return;
+  clearTimeout(autoPublishTimer);
+  autoPublishTimer=setTimeout(()=>{
+    if(!isBusy && hasUnsavedChanges()) publishChanges({silent:true});
+  },1200);
+}
+
+async function testGitHubConnection(){
+  const token=document.getElementById("token").value.trim();
+  if(!token){ showToast("Enter GitHub token first"); return; }
+  try{
+    const res=await fetch(REPO_API,{headers:{"Authorization":`Bearer ${token}`,"Accept":"application/vnd.github+json"},cache:"no-store"});
+    const data=await res.json();
+    if(!res.ok) throw new Error(data.message||"GitHub rejected the token");
+    const canWrite=data.permissions?.push===true;
+    showToast(canWrite?`Connected. Write access ready for ${OWNER}/${REPO}.`:`Connected, but this token is read-only.`);
+  }catch(e){ showToast("GitHub connection failed: "+e.message); }
 }
 
 function login(){
@@ -2963,30 +3432,27 @@ function login(){
     return;
   }
 
-  if(!TOKEN){
-    showToast("Enter GitHub token");
-    return;
-  }
-
   saveLogin();
 
   document.getElementById("loginCard").classList.add("hidden");
   document.getElementById("panel").classList.remove("hidden");
   const bn=document.getElementById("bottomNav"); if(bn) bn.style.display="";
+  syncGitHubTokenUI();
 
   loadData();
 }
 
 window.addEventListener("load",()=>{
-  const p=localStorage.getItem("warlito_pass");
-  const t=localStorage.getItem("warlito_token");
-  if(p&&t){
+  const p=localStorage.getItem("Sanzxmzz_pass");
+  const t=localStorage.getItem("Sanzxmzz_token");
+  if(p){
     document.getElementById("password").value=p;
-    document.getElementById("token").value=t;
-    TOKEN=t;
+    document.getElementById("token").value=t||"";
+    TOKEN=t||"";
     document.getElementById("loginCard").classList.add("hidden");
     document.getElementById("panel").classList.remove("hidden");
     const bn=document.getElementById("bottomNav"); if(bn) bn.style.display="";
+    syncGitHubTokenUI();
     loadData();
   }
 });
@@ -3083,7 +3549,7 @@ function cleanUnusedSkinTags(){
     `Remove ${removedCount} unused/invalid/duplicate tag(s) from ${affectedSkins} skin(s)? ${preview ? "Found: " + preview : ""}`,
     () => {
       markDirty();
-      render();
+      renderHeroSkinViews();
       if(typeof renderSkinTagManager === "function") renderSkinTagManager();
       if(typeof addActivity === "function") addActivity(`Cleaned ${removedCount} unused skin tag(s) from ${affectedSkins} skin(s).`);
       log(`Cleaned unused skin tags: ${removedCount} removed from ${affectedSkins} skin(s).`);
@@ -3181,31 +3647,35 @@ async function loadData(){
   try{
     setBusy(true,"Loading JSON...");
     await loadTags();
+    await loadHeroCatalog(false);
     log("Loading skins.json...");
 
-    const res=await fetch(`${API}?ref=${BRANCH}`,{
-      headers:{
-        "Authorization":`Bearer ${TOKEN}`,
-        "Accept":"application/vnd.github+json"
+    let obj;
+    if(TOKEN){
+      const res=await fetch(`${API}?ref=${BRANCH}`,{
+        headers:{"Authorization":`Bearer ${TOKEN}`,"Accept":"application/vnd.github+json"}
+      });
+      const file=await res.json();
+      if(!res.ok){
+        log(JSON.stringify(file,null,2));
+        showToast("Failed to load JSON");
+        return;
       }
-    });
-
-    const file=await res.json();
-
-    if(!res.ok){
-      log(JSON.stringify(file,null,2));
-      showToast("Failed to load JSON");
-      return;
+      SHA=file.sha||"";
+      obj=JSON.parse(decodeURIComponent(escape(atob(file.content.replace(/\n/g,"")))));
+    }else{
+      const res=await fetch(DATA_URL+"?v="+Date.now(),{cache:"no-store"});
+      if(!res.ok) throw new Error("HTTP "+res.status+" while loading skins.json");
+      obj=await res.json();
     }
-
-    SHA=file.sha;
-    const text=decodeURIComponent(escape(atob(file.content.replace(/\n/g,""))));
-    DATA=JSON.parse(text);
+    DATA=obj;
 
     normalizeData();
     ORIGINAL=clone(DATA);
     markSaved();
     render();
+    renderHeroPage();
+    renderSkinsPage();
     await loadUpgradeData(false);
     await loadModskinData(false);
     await loadMemeData(false);
@@ -3215,6 +3685,7 @@ async function loadData(){
     await loadCarousel(true);
     await loadNews(true);
     await loadYT(true);
+    await loadSuggested(false);
     log("Loaded.");
     showToast("Dashboard updated.");
   }catch(e){
@@ -3225,16 +3696,317 @@ async function loadData(){
   }
 }
 
-async function publishChanges(){
-  if(!dirty && !dirtyTags && !dirtyUpgrade && !dirtyModskin && !dirtyMeme && !dirtyBE && !dirtyBanners && !dirtyGroups && !dirtyCarousel && !dirtyNews && !dirtyYT){
+async function loadHeroCatalog(showMessage=true){
+  try{
+    let obj;
+    if(TOKEN){
+      const res=await fetch(`${HERO_API}?ref=${BRANCH}&v=${Date.now()}`,{
+        headers:{"Authorization":`Bearer ${TOKEN}`,"Accept":"application/vnd.github+json"},
+        cache:"no-store"
+      });
+      const file=await res.json();
+      if(!res.ok) throw new Error(JSON.stringify(file));
+      obj=JSON.parse(decodeURIComponent(escape(atob(file.content.replace(/\n/g,"")))));
+    }else{
+      const res=await fetch(HERO_URL+"?v="+Date.now(),{cache:"no-store"});
+      if(!res.ok) throw new Error("HTTP "+res.status+" while loading heroes.json");
+      obj=await res.json();
+    }
+    const rows=Array.isArray(obj)?obj:(Array.isArray(obj?.heroes)?obj.heroes:[]);
+    HERO_DATABASE=rows.map(item=>({
+      hero_name:String(item.hero_name||item.name||""),
+      hero_id:String(item.hero_id||item.id||slugify(item.hero_name||item.name||"")),
+      head:String(item.head||item.image_url||item.image||"")
+    })).filter(item=>item.hero_name);
+    if(showMessage) showToast("Hero list updated.");
+  }catch(e){
+    HERO_DATABASE=[];
+    log("heroes.json load failed: "+e.toString());
+    if(showMessage) showToast("heroes.json failed to load");
+  }
+}
+
+function getSuggestedHeroChoices(){
+  const map=new Map();
+  [...HERO_DATABASE,...(SUGGESTED_DATA||[]).map(item=>({hero_name:item.hero_name,hero_id:item.hero_id,head:item.head}))].forEach(item=>{
+    const name=String(item.hero_name||"").trim();
+    if(!name) return;
+    const key=slugify(name);
+    if(!map.has(key)||(!map.get(key).head&&item.head)) map.set(key,{hero_name:name,hero_id:item.hero_id||key,head:item.head||""});
+  });
+  return [...map.values()].sort((a,b)=>a.hero_name.localeCompare(b.hero_name));
+}
+
+function onSuggestedHeroNameInput(){
+  const nameInput=document.getElementById("suggestedHeroName");
+  const idInput=document.getElementById("suggestedHeroId");
+  const name=nameInput?nameInput.value.trim():"";
+
+  // Keep the search box and id auto-filled in sync while typing a custom hero name,
+  // but don't clobber an id the user already edited manually.
+  const searchInput=document.getElementById("suggestedHeroSearch");
+  if(searchInput) searchInput.value=name;
+
+  if(idInput && !idInput.dataset.userEdited){
+    idInput.value=name?slugify(name):"";
+  }
+
+  const choice=document.getElementById("suggestedHeroChoice");
+  if(choice){ choice.style.display="none"; choice.innerHTML=""; }
+
+  renderSuggestedSkinOptions();
+  updateSuggestedPreview();
+}
+
+function setSuggestedHeroSelection(hero){
+  if(!hero) return;
+  document.getElementById("suggestedHeroSearch").value=hero.hero_name||"";
+  document.getElementById("suggestedHeroName").value=hero.hero_name||"";
+  const idInput=document.getElementById("suggestedHeroId");
+  if(idInput){ idInput.value=hero.hero_id||slugify(hero.hero_name||""); delete idInput.dataset.userEdited; }
+  document.getElementById("suggestedHead").value=hero.head||"";
+  const choice=document.getElementById("suggestedHeroChoice");
+  if(choice){
+    choice.style.display="flex";
+    choice.innerHTML=`<img src="${esc(hero.head||"")}" alt="" onerror="this.style.opacity='.25'"><span>Selected: <b>${esc(hero.hero_name||"")}</b><br>${esc(hero.head?"Hero image ready":"No head image found")}</span><button type="button" class="btnDark" onclick="clearSuggestedHero()">Change</button>`;
+  }
+  const panel=document.getElementById("suggestedHeroOptions"); if(panel) panel.classList.remove("open");
+  renderSuggestedSkinOptions();
+  updateSuggestedPreview();
+}
+
+function renderSuggestedHeroOptions(){
+  const panel=document.getElementById("suggestedHeroOptions");
+  const input=document.getElementById("suggestedHeroSearch");
+  if(!panel||!input) return;
+  const q=input.value.trim().toLowerCase();
+  SUGGESTED_HERO_OPTIONS=getSuggestedHeroChoices().filter(hero=>!q||hero.hero_name.toLowerCase().includes(q)||hero.hero_id.toLowerCase().includes(q)).slice(0,16);
+  panel.innerHTML=SUGGESTED_HERO_OPTIONS.length?SUGGESTED_HERO_OPTIONS.map((hero,index)=>`<button type="button" class="suggestedOption" onclick="selectSuggestedHero(${index})"><img src="${esc(hero.head||"")}" alt="" onerror="this.style.opacity='.25'"><span><b>${esc(hero.hero_name)}</b><span>${esc(hero.hero_id)}</span></span></button>`).join(""):"<div class=\"small\" style=\"padding:8px\">Hero tidak ditemukan.</div>";
+  panel.classList.add("open");
+}
+
+function selectSuggestedHero(index){
+  setSuggestedHeroSelection(SUGGESTED_HERO_OPTIONS[index]);
+}
+
+function clearSuggestedHero(){
+  ["suggestedHeroSearch","suggestedHeroName","suggestedHeroId","suggestedHead"].forEach(id=>{const el=document.getElementById(id);if(el)el.value="";});
+  const idInput=document.getElementById("suggestedHeroId"); if(idInput) delete idInput.dataset.userEdited;
+  const choice=document.getElementById("suggestedHeroChoice"); if(choice){choice.style.display="none";choice.innerHTML="";}
+  const panel=document.getElementById("suggestedHeroOptions"); if(panel) panel.classList.remove("open");
+  renderSuggestedSkinOptions();
+  updateSuggestedPreview();
+}
+
+function getSuggestedSkinChoices(){
+  const map=new Map();
+  const heroName=(document.getElementById("suggestedHeroName")?.value||"").trim().toLowerCase();
+  const add=(name,hero)=>{
+    name=String(name||"").trim();
+    if(!name) return;
+    if(heroName&&!String(hero||"").toLowerCase().includes(heroName)) return;
+    map.set(name.toLowerCase(),name);
+  };
+  const rows=Array.isArray(DATA)?DATA.flatMap(x=>Array.isArray(x.heroes)?x.heroes:[]):(DATA.heroes||[]);
+  rows.forEach(hero=>(hero.skins||[]).forEach(skin=>add(skin.skin_name||skin.name,hero.name||hero.hero_name)));
+  (SUGGESTED_DATA||[]).forEach(item=>add(item.skin_name,item.hero_name));
+  return [...map.values()].sort((a,b)=>a.localeCompare(b));
+}
+
+function renderSuggestedSkinOptions(){
+  const panel=document.getElementById("suggestedSkinOptions");
+  const input=document.getElementById("suggestedSkinName");
+  if(!panel||!input) return;
+  const q=input.value.trim().toLowerCase();
+  SUGGESTED_SKIN_OPTIONS=getSuggestedSkinChoices().filter(name=>!q||name.toLowerCase().includes(q)).slice(0,16);
+  panel.innerHTML=SUGGESTED_SKIN_OPTIONS.length?SUGGESTED_SKIN_OPTIONS.map((name,index)=>`<button type="button" class="suggestedOption" style="grid-template-columns:1fr" onclick="selectSuggestedSkin(${index})"><span><b>${esc(name)}</b><span>Existing skin name</span></span></button>`).join(""):"<div class=\"small\" style=\"padding:8px\">Nama baru bisa langsung diketik.</div>";
+  panel.classList.add("open");
+}
+
+function selectSuggestedSkin(index){
+  const name=SUGGESTED_SKIN_OPTIONS[index];
+  if(!name) return;
+  document.getElementById("suggestedSkinName").value=name;
+  const panel=document.getElementById("suggestedSkinOptions"); if(panel) panel.classList.remove("open");
+  updateSuggestedPreview();
+}
+
+function normalizeSuggestedData(){
+  if(!Array.isArray(SUGGESTED_DATA)) SUGGESTED_DATA=[];
+  SUGGESTED_DATA=SUGGESTED_DATA.map(item=>({
+    hero_name:String(item?.hero_name||item?.hero||""),
+    skin_name:String(item?.skin_name||item?.name||""),
+    image:String(item?.image||""),
+    head:String(item?.head||""),
+    script:String(item?.script||""),
+    hero_id:String(item?.hero_id||slugify(item?.hero_name||item?.hero||""))
+  })).filter(item=>item.hero_name||item.skin_name||item.image||item.script);
+}
+
+async function loadSuggested(showMessage=true){
+  try{
+    if(TOKEN){
+      const res=await fetch(`${SUGGESTED_API}?ref=${BRANCH}&v=${Date.now()}`,{
+        headers:{"Authorization":`Bearer ${TOKEN}`,"Accept":"application/vnd.github+json"},
+        cache:"no-store"
+      });
+      const file=await res.json();
+      if(!res.ok) throw new Error(JSON.stringify(file));
+      SUGGESTED_SHA=file.sha||"";
+      const text=decodeURIComponent(escape(atob(file.content.replace(/\n/g,""))));
+      SUGGESTED_DATA=JSON.parse(text);
+    }else{
+      const res=await fetch(SUGGESTED_URL+"?v="+Date.now(),{cache:"no-store"});
+      if(!res.ok) throw new Error("HTTP "+res.status+" while loading suggested.json");
+      SUGGESTED_DATA=await res.json();
+      SUGGESTED_SHA="";
+    }
+    normalizeSuggestedData();
+    SUGGESTED_ORIGINAL=clone(SUGGESTED_DATA);
+    markSuggestedSaved();
+    renderSuggested();
+    log("Loaded suggested.json: " + SUGGESTED_DATA.length);
+    if(showMessage) showToast("Suggested updated.");
+  }catch(e){
+    log("suggested.json load failed: " + e.toString());
+    if(showMessage) showToast("suggested.json failed to load");
+  }
+}
+
+function renderSuggested(){
+  const list=document.getElementById("suggestedList");
+  if(!list) return;
+  const q=(document.getElementById("suggestedSearch")?.value||"").trim().toLowerCase();
+  const rows=SUGGESTED_DATA.map((item,index)=>({item,index})).filter(({item})=>{
+    if(!q) return true;
+    return [item.hero_name,item.skin_name,item.hero_id,item.image,item.script].join(" ").toLowerCase().includes(q);
+  });
+  updateSuggestedStatus();
+  if(!rows.length){
+    list.innerHTML=`<div class="small" style="grid-column:1/-1;padding:18px;text-align:center">No suggestions found. Add the first one above.</div>`;
+    return;
+  }
+  list.innerHTML=rows.map(({item,index})=>`
+    <article class="suggestedCard">
+      <img src="${esc(item.image)}" alt="${esc(item.skin_name||"Suggested skin")}" loading="lazy" onerror="this.style.opacity='.3'">
+      <div style="min-width:0">
+        <div class="suggestedName">${esc(item.skin_name||"Untitled skin")}</div>
+        <div class="suggestedMeta">${esc(item.hero_name||"Unknown hero")} · ${esc(item.hero_id||"-")}</div>
+        <div class="suggestedMeta">${item.script?"Script ready":"Script missing"}</div>
+        <div class="suggestedActions">
+          <button class="btnBlue" onclick="openSuggestedModal(${index})">Edit</button>
+          <button class="btnRed" onclick="deleteSuggested(${index})">Delete</button>
+          ${item.script?`<button class="btnDark" onclick="window.open('${esc(item.script)}','_blank','noopener')">Open ZIP</button>`:""}
+        </div>
+      </div>
+    </article>
+  `).join("");
+}
+
+function updateSuggestedPreview(){
+  const image=document.getElementById("suggestedImage")?.value.trim()||"";
+  const title=document.getElementById("suggestedSkinName")?.value.trim()||"Suggestion preview";
+  const hero=document.getElementById("suggestedHeroName")?.value.trim()||"Paste an image URL to preview.";
+  const img=document.getElementById("suggestedPreviewImg");
+  const titleEl=document.getElementById("suggestedPreviewTitle");
+  const meta=document.getElementById("suggestedPreviewMeta");
+  if(img){ img.src=image; img.style.display=image?"block":"none"; }
+  if(titleEl) titleEl.innerText=title;
+  if(meta) meta.innerText=hero;
+}
+
+function openSuggestedModal(index=null){
+  currentSuggestedEditIndex=index;
+  const item=index===null?{}:SUGGESTED_DATA[index]||{};
+  document.getElementById("suggestedModalTitle").innerText=index===null?"Add Suggested Skin":"Edit Suggested Skin";
+  document.getElementById("suggestedHeroSearch").value=item.hero_name||"";
+  document.getElementById("suggestedHeroName").value=item.hero_name||"";
+  const idInput=document.getElementById("suggestedHeroId");
+  if(idInput){ idInput.value=item.hero_id||""; delete idInput.dataset.userEdited; }
+  document.getElementById("suggestedSkinName").value=item.skin_name||"";
+  document.getElementById("suggestedImage").value=item.image||"";
+  document.getElementById("suggestedHead").value=item.head||"";
+  document.getElementById("suggestedScript").value=item.script||"";
+  const choice=document.getElementById("suggestedHeroChoice");
+  if(choice){ choice.style.display="none"; choice.innerHTML=""; }
+  if(item.hero_name){
+    const found=getSuggestedHeroChoices().find(hero=>slugify(hero.hero_name)===slugify(item.hero_name));
+    setSuggestedHeroSelection({...found,...item,hero_name:item.hero_name,hero_id:item.hero_id||found?.hero_id||slugify(item.hero_name),head:item.head||found?.head||""});
+  }
+  renderSuggestedSkinOptions();
+  updateSuggestedPreview();
+  document.getElementById("suggestedModal").style.display="flex";
+}
+
+function closeSuggestedModal(){
+  document.getElementById("suggestedModal").style.display="none";
+  ["suggestedHeroOptions","suggestedSkinOptions"].forEach(id=>{const el=document.getElementById(id);if(el)el.classList.remove("open");});
+  currentSuggestedEditIndex=null;
+}
+
+function saveSuggestedModal(){
+  const hero_name=document.getElementById("suggestedHeroName").value.trim();
+  const skin_name=document.getElementById("suggestedSkinName").value.trim();
+  const image=document.getElementById("suggestedImage").value.trim();
+  const head=document.getElementById("suggestedHead").value.trim();
+  const script=document.getElementById("suggestedScript").value.trim();
+  const hero_id=document.getElementById("suggestedHeroId").value.trim()||slugify(hero_name);
+  if(!hero_name||!skin_name||!image||!script){ showToast("Fill hero, skin, image, and script URL"); return; }
+  const item={hero_name,skin_name,image,head,script,hero_id};
+  const wasEdit=currentSuggestedEditIndex!==null;
+  if(!wasEdit) SUGGESTED_DATA.push(item);
+  else SUGGESTED_DATA[currentSuggestedEditIndex]=item;
+  markSuggestedDirty();
+  closeSuggestedModal();
+  renderSuggested();
+  showToast(wasEdit?"Suggestion edited locally.":"Suggestion added locally.");
+}
+
+function deleteSuggested(index){
+  const item=SUGGESTED_DATA[index];
+  if(!item) return;
+  showConfirm("Delete Suggestion",`Delete "${item.skin_name||"this suggestion"}" from suggested.json?`,()=>{
+    SUGGESTED_DATA.splice(index,1);
+    markSuggestedDirty();
+    renderSuggested();
+    showToast("Suggestion deleted locally.");
+  });
+}
+
+function downloadSuggested(){
+  const blob=new Blob([JSON.stringify(SUGGESTED_DATA,null,2)],{type:"application/json"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="suggested.json";
+  document.body.appendChild(a); a.click(); URL.revokeObjectURL(a.href); a.remove();
+}
+
+async function publishAllChanges(){
+  if(!TOKEN){
+    showToast("Apply GitHub token dulu sebelum Publish.");
+    return;
+  }
+  const forceAll=()=>{
+    dirty=true; dirtyTags=true; dirtyUpgrade=true; dirtyModskin=true; dirtyMeme=true;
+    dirtyBE=true; dirtyBanners=true; dirtyGroups=true; dirtyCarousel=true;
+    dirtyNews=true; dirtyYT=true; dirtySuggested=true;
+    publishChanges({silent:true});
+  };
+  showConfirm("Publish All Changes","Ito ay i-publish ANG LAHAT ng kategoriya (skins, tags, upgrade, custom, meme, effects, carousel, news, yt, suggested) papunta sa GitHub, kahit walang bagong changes. Continue?",forceAll);
+}
+
+async function publishChanges(options={}){
+  const silent=options.silent===true;
+  if(!TOKEN){
+    showToast("Apply GitHub token dulu sebelum Publish.");
+    return;
+  }
+  if(!dirty && !dirtyTags && !dirtyUpgrade && !dirtyModskin && !dirtyMeme && !dirtyBE && !dirtyBanners && !dirtyGroups && !dirtyCarousel && !dirtyNews && !dirtyYT && !dirtySuggested){
     showToast("No changes to publish.");
     return;
   }
 
-  showConfirm("Publish Changes","This will commit local edits to GitHub. It can update skins.json, tags.json, skin_upgrades.json, custom.json, meme.json, battleeffects.json, effectbanners.json, carousel.json, whatsnew.json, and youtube.json. Continue?",async()=>{
+  const runPublish=async()=>{
     try{
       normalizeData();
-      createBackupDownload("before_publish");
       setBusy(true,"Publishing changes...");
       log("Publishing changes...");
 
@@ -3266,7 +4038,7 @@ async function publishChanges(){
             "Content-Type":"application/json"
           },
           body:JSON.stringify({
-            message:"Batch update skins.json from Warlito Admin Panel",
+            message:"Batch update skins.json from Sanzxmzz Admin Panel",
             content,
             sha:SHA,
             branch:BRANCH
@@ -3323,7 +4095,7 @@ async function publishChanges(){
             "Content-Type":"application/json"
           },
           body:JSON.stringify({
-            message:"Update tags.json from Warlito Admin Panel",
+            message:"Update tags.json from Sanzxmzz Admin Panel",
             content:tagContent,
             sha:TAG_SHA,
             branch:BRANCH
@@ -3376,7 +4148,7 @@ async function publishChanges(){
             "Content-Type":"application/json"
           },
           body:JSON.stringify({
-            message:"Update skin_upgrades.json from Warlito Admin Panel",
+            message:"Update skin_upgrades.json from Sanzxmzz Admin Panel",
             content:upgradeContent,
             sha:UPGRADE_SHA,
             branch:BRANCH
@@ -3428,7 +4200,7 @@ async function publishChanges(){
             "Content-Type":"application/json"
           },
           body:JSON.stringify({
-            message:"Update custom.json from Warlito Admin Panel",
+            message:"Update custom.json from Sanzxmzz Admin Panel",
             content:modskinContent,
             sha:MODSKIN_SHA,
             branch:BRANCH
@@ -3470,7 +4242,7 @@ async function publishChanges(){
 
         const memeContent=btoa(unescape(encodeURIComponent(JSON.stringify(MEME_DATA,null,2))));
         const memeBody={
-          message:"Update meme.json from Warlito Admin Panel",
+          message:"Update meme.json from Sanzxmzz Admin Panel",
           content:memeContent,
           branch:BRANCH
         };
@@ -3515,7 +4287,7 @@ async function publishChanges(){
         const beRes=await fetch(BATTLE_EFFECTS_API,{
           method:"PUT",
           headers:{"Authorization":`Bearer ${TOKEN}`,"Accept":"application/vnd.github+json","Content-Type":"application/json"},
-          body:JSON.stringify({message:"Update battleeffects.json from Warlito Admin Panel",content:beContent,sha:BE_SHA,branch:BRANCH})
+          body:JSON.stringify({message:"Update battleeffects.json from Sanzxmzz Admin Panel",content:beContent,sha:BE_SHA,branch:BRANCH})
         });
         const beResult=await beRes.json();
         if(!beRes.ok){
@@ -3540,7 +4312,7 @@ async function publishChanges(){
         const banRes=await fetch(BANNERS_API,{
           method:"PUT",
           headers:{"Authorization":`Bearer ${TOKEN}`,"Accept":"application/vnd.github+json","Content-Type":"application/json"},
-          body:JSON.stringify({message:"Update effectbanners.json from Warlito Admin Panel",content:banContent,sha:BANNERS_SHA,branch:BRANCH})
+          body:JSON.stringify({message:"Update effectbanners.json from Sanzxmzz Admin Panel",content:banContent,sha:BANNERS_SHA,branch:BRANCH})
         });
         const banResult=await banRes.json();
         if(!banRes.ok){ log(JSON.stringify(banResult,null,2)); showToast("effectbanners.json publish failed."); return; }
@@ -3561,7 +4333,7 @@ async function publishChanges(){
         const grpRes=await fetch(GROUPS_API,{
           method:"PUT",
           headers:{"Authorization":`Bearer ${TOKEN}`,"Accept":"application/vnd.github+json","Content-Type":"application/json"},
-          body:JSON.stringify({message:"Update effectgroups.json from Warlito Admin Panel",content:grpContent,sha:GROUPS_SHA,branch:BRANCH})
+          body:JSON.stringify({message:"Update effectgroups.json from Sanzxmzz Admin Panel",content:grpContent,sha:GROUPS_SHA,branch:BRANCH})
         });
         const grpResult=await grpRes.json();
         if(!grpRes.ok){ log(JSON.stringify(grpResult,null,2)); showToast("effectgroups.json publish failed."); return; }
@@ -3583,7 +4355,7 @@ async function publishChanges(){
           carSha = latestCarFile.sha || "";
         }
         const carContent=btoa(unescape(encodeURIComponent(JSON.stringify(CAROUSEL_DATA,null,2))));
-        const carBody={message:"Update carousel.json from Warlito Admin Panel",content:carContent,branch:BRANCH};
+        const carBody={message:"Update carousel.json from Sanzxmzz Admin Panel",content:carContent,branch:BRANCH};
         if(carSha) carBody.sha = carSha;
         const carRes=await fetch(CAROUSEL_API,{
           method:"PUT",
@@ -3610,7 +4382,7 @@ async function publishChanges(){
           newsSha = latestNewsFile.sha || "";
         }
         const newsContent=btoa(unescape(encodeURIComponent(JSON.stringify(NEWS_DATA,null,2))));
-        const newsBody={message:"Update whatsnew.json from Warlito Admin Panel",content:newsContent,branch:BRANCH};
+        const newsBody={message:"Update whatsnew.json from Sanzxmzz Admin Panel",content:newsContent,branch:BRANCH};
         if(newsSha) newsBody.sha = newsSha;
         const newsRes=await fetch(NEWS_API,{
           method:"PUT",
@@ -3637,7 +4409,7 @@ async function publishChanges(){
           ytSha = latestYTFile.sha || "";
         }
         const ytContent=btoa(unescape(encodeURIComponent(JSON.stringify(YT_DATA,null,2))));
-        const ytBody={message:"Update youtube.json from Warlito Admin Panel",content:ytContent,branch:BRANCH};
+        const ytBody={message:"Update youtube.json from Sanzxmzz Admin Panel",content:ytContent,branch:BRANCH};
         if(ytSha) ytBody.sha = ytSha;
         const ytRes=await fetch(YT_API,{
           method:"PUT",
@@ -3652,6 +4424,41 @@ async function publishChanges(){
         log("youtube.json published.");
       }
 
+      if(dirtySuggested){
+        normalizeSuggestedData();
+        let suggestedSha="";
+        const latestSuggested=await fetch(`${SUGGESTED_API}?ref=${BRANCH}`,{
+          headers:{"Authorization":`Bearer ${TOKEN}`,"Accept":"application/vnd.github+json"}
+        });
+        if(latestSuggested.status!==404){
+          const latestSuggestedFile=await latestSuggested.json();
+          if(!latestSuggested.ok){
+            log(JSON.stringify(latestSuggestedFile,null,2));
+            showToast("Cannot get latest suggested.json SHA");
+            return;
+          }
+          suggestedSha=latestSuggestedFile.sha||"";
+        }
+        const suggestedContent=btoa(unescape(encodeURIComponent(JSON.stringify(SUGGESTED_DATA,null,2))));
+        const suggestedBody={message:"Update suggested.json from Sanzxmzz Admin Panel",content:suggestedContent,branch:BRANCH};
+        if(suggestedSha) suggestedBody.sha=suggestedSha;
+        const suggestedRes=await fetch(SUGGESTED_API,{
+          method:"PUT",
+          headers:{"Authorization":`Bearer ${TOKEN}`,"Accept":"application/vnd.github+json","Content-Type":"application/json"},
+          body:JSON.stringify(suggestedBody)
+        });
+        const suggestedResult=await suggestedRes.json();
+        if(!suggestedRes.ok){
+          log(JSON.stringify(suggestedResult,null,2));
+          showToast("suggested.json publish failed. Reload then try again.");
+          return;
+        }
+        SUGGESTED_SHA=suggestedResult.content?.sha||"";
+        SUGGESTED_ORIGINAL=clone(SUGGESTED_DATA);
+        markSuggestedSaved();
+        log("suggested.json published.");
+      }
+
       markSaved();
       markTagsSaved();
       markUpgradeSaved();
@@ -3663,15 +4470,18 @@ async function publishChanges(){
       markNewsSaved();
       markYTSaved();
       render();
+      renderHeroPage();
+      renderSkinsPage();
       renderUpgrades();
       renderModskins();
-    renderMemes();
+      renderMemes();
       renderSkinTagManager();
       renderBattleEffects();
       renderBanners();
       renderGroupImages();
       renderCarousel();
       renderNews();
+      renderSuggested();
       log("Published.");
       showToast("Published to GitHub.");
     }catch(e){
@@ -3680,11 +4490,13 @@ async function publishChanges(){
     }finally{
       setBusy(false);
     }
-  });
+  };
+  if(silent) return runPublish();
+  showConfirm("Publish Changes","This will commit local edits to GitHub, including suggested.json when changed. Continue?",runPublish);
 }
 
 function discardChanges(){
-  if(!dirty && !dirtyTags && !dirtyUpgrade && !dirtyModskin && !dirtyMeme){
+  if(!dirty && !dirtyTags && !dirtyUpgrade && !dirtyModskin && !dirtyMeme && !dirtyBE && !dirtyBanners && !dirtyGroups && !dirtyCarousel && !dirtyNews && !dirtyYT && !dirtySuggested){
     loadData();
     return;
   }
@@ -3739,7 +4551,14 @@ function discardChanges(){
       markYTSaved();
       renderYT();
     }
+    if(SUGGESTED_ORIGINAL){
+      SUGGESTED_DATA=clone(SUGGESTED_ORIGINAL);
+      markSuggestedSaved();
+      renderSuggested();
+    }
     render();
+    renderHeroPage();
+    renderSkinsPage();
     renderUpgrades();
     renderModskins();
     renderTagDropdown();
@@ -3751,15 +4570,23 @@ function discardChanges(){
 }
 
 function reloadAll(){
-  if(!TOKEN){showToast("Login first");return}
+  if(document.getElementById("panel")?.classList.contains("hidden")){showToast("Login first");return}
 
-  if(dirty || dirtyTags || dirtyUpgrade || dirtyModskin || dirtyMeme){
+  if(dirty || dirtyTags || dirtyUpgrade || dirtyModskin || dirtyMeme || dirtyBE || dirtyBanners || dirtyGroups || dirtyCarousel || dirtyNews || dirtyYT || dirtySuggested){
     showConfirm("Reload JSON","You have unsaved changes. Reloading will discard them.",()=>{
       loadData();
     });
   }else{
     loadData();
   }
+}
+
+function renderHeroSkinViews(){
+  render();
+  const heroPage=document.getElementById("heroPage");
+  if(heroPage && !heroPage.classList.contains("hidden")) renderHeroPage();
+  const skinsPage=document.getElementById("skinsPage");
+  if(skinsPage && !skinsPage.classList.contains("hidden")) renderSkinsPage();
 }
 
 function addHero(){
@@ -3775,7 +4602,7 @@ function addHero(){
   DATA.heroes.push({id:makeHeroId(name),name,category,enabled:true,skins:[]});
   document.getElementById("newHeroName").value="";
   markDirty();
-  render();
+  renderHeroSkinViews();
   showToast("Hero added locally.");
 }
 
@@ -3798,7 +4625,7 @@ function saveHeroEdit(){
   hero.category=cat;
   closeHeroEdit();
   markDirty();
-  render();
+  renderHeroSkinViews();
   showToast("Hero edited locally.");
 }
 
@@ -3807,7 +4634,7 @@ function closeHeroEdit(){document.getElementById("heroEditModal").style.display=
 function toggleHero(index){
   DATA.heroes[index].enabled=!DATA.heroes[index].enabled;
   markDirty();
-  render();
+  renderHeroSkinViews();
   showToast("Hero visibility changed locally.");
 }
 
@@ -3816,7 +4643,7 @@ function deleteHero(index){
   showConfirm("Delete Hero",`Deleting "${hero.name}" will remove the hero and all ${hero.skins.length} skin(s). This cannot be undone after publish.`,()=>{
     DATA.heroes.splice(index,1);
     markDirty();
-    render();
+    renderHeroSkinViews();
     showToast("Hero deleted locally.");
   });
 }
@@ -3920,13 +4747,13 @@ function saveSkinModal(){
     hero.skins.push(skinData);
     closeModal();
     markDirty();
-    render();
+    renderHeroSkinViews();
     showToast("Skin added locally.");
   }else{
     hero.skins[currentSkinIndex]=skinData;
     closeModal();
     markDirty();
-    render();
+    renderHeroSkinViews();
     showToast("Skin edited locally.");
   }
 }
@@ -3938,7 +4765,7 @@ function deleteSkin(heroIndex,skinIndex){
   showConfirm("Delete Skin",`Deleting skin "${skin.id}" from ${hero.name}. This cannot be undone after publish.`,()=>{
     hero.skins.splice(skinIndex,1);
     markDirty();
-    render();
+    renderHeroSkinViews();
     showToast("Skin deleted locally.");
   });
 }
@@ -3954,21 +4781,21 @@ function moveSkin(heroIndex,skinIndex,dir){
   skins[newIndex]=temp;
 
   markDirty();
-  render();
+  renderHeroSkinViews();
   showToast("Skin order changed locally.");
 }
 
 function toggleFeatured(heroIndex,skinIndex){
   DATA.heroes[heroIndex].skins[skinIndex].featured=!DATA.heroes[heroIndex].skins[skinIndex].featured;
   markDirty();
-  render();
+  renderHeroSkinViews();
   showToast("Featured changed locally.");
 }
 
 function toggleSkin(heroIndex,skinIndex){
   DATA.heroes[heroIndex].skins[skinIndex].enabled=!DATA.heroes[heroIndex].skins[skinIndex].enabled;
   markDirty();
-  render();
+  renderHeroSkinViews();
   showToast("Skin visibility changed locally.");
 }
 
@@ -3980,6 +4807,20 @@ function toggleCollapse(heroId){
 /* Show/Hide a collapsible data section. Keeps the heavy lists hidden by
    default so the panel stays clean; the list id never changes so all the
    existing render functions keep working whether it is open or not. */
+function goToHeroesSection(){
+  showDashboardPage();
+  const sec=document.getElementById("heroesSection");
+  if(sec && !sec.classList.contains("open")){
+    sec.classList.add("open");
+    const lbl=document.getElementById("heroesLbl");
+    if(lbl) lbl.textContent="Hide";
+  }
+  setTimeout(()=>{
+    const target=document.getElementById("heroesSection");
+    if(target) target.scrollIntoView({behavior:"smooth",block:"start"});
+  },60);
+}
+
 function toggleData(key){
   var sec=document.getElementById(key+'Section');
   if(!sec)return;
@@ -4152,7 +4993,7 @@ function addNewTagFromPicker(){
   renderSelectedTags();
   renderTagDropdown();
   renderSkinTagManager();
-  render();
+  renderHeroSkinViews();
   showToast("New tag added locally. Publish Changes to save tags.json.");
 }
 
@@ -4167,9 +5008,9 @@ function renderSelectedTags(){
 
   box.innerHTML = currentSelectedTags.map(t=>`
     <div class="tagChip">
-      ${t.icon ? `<img src="${t.icon}" onerror="this.style.display='none'">` : ""}
-      <span>${t.name}</span>
-      <button onclick="removeSelectedTag('${t.id}')">X</button>
+      ${t.icon ? `<img src="${esc(t.icon)}" onerror="this.style.display='none'">` : ""}
+      <span>${esc(t.name||"")}</span>
+      <button onclick="removeSelectedTag('${esc(t.id||"")}')">X</button>
     </div>
   `).join("");
 }
@@ -4219,11 +5060,11 @@ function renderTagDropdown(){
   }
 
   box.innerHTML = results.map(t=>`
-    <div class="tagOption" onclick="addSelectedTag('${t.id}')">
-      ${t.icon ? `<img src="${t.icon}" onerror="this.style.display='none'">` : `<span class="badge badgePurple">TAG</span>`}
+    <div class="tagOption" onclick="addSelectedTag('${esc(t.id||"")}')">
+      ${t.icon ? `<img src="${esc(t.icon)}" onerror="this.style.display='none'">` : `<span class="badge badgePurple">TAG</span>`}
       <div style="min-width:0">
-        <div class="tagOptionName">${t.name}</div>
-        <div class="tagOptionId">${t.id}</div>
+        <div class="tagOptionName">${esc(t.name||"")}</div>
+        <div class="tagOptionId">${esc(t.id||"")}</div>
       </div>
     </div>
   `).join("");
@@ -4265,10 +5106,11 @@ function renderTagBadges(tags){
   const clean = normalizeSkinTags(tags || []);
   if(clean.length === 0) return "";
   return `<div class="officialTags">` + clean.map(t=>{
+    const name=esc(t.name||"");
     if(t.icon){
-      return `<img class="tagIconBadge" src="${t.icon}" title="${t.name}" onerror="this.outerHTML='<span class=&quot;badge badgePurple&quot;>${t.name}</span>'">`;
+      return `<img class="tagIconBadge" src="${esc(t.icon)}" title="${name}" loading="lazy" onerror="this.outerHTML='<span class=&quot;badge badgePurple&quot;>${name}</span>'">`;
     }
-    return `<span class="badge badgePurple">${t.name}</span>`;
+    return `<span class="badge badgePurple">${name}</span>`;
   }).join("") + `</div>`;
 }
 
@@ -4706,6 +5548,7 @@ function markMemeDirty(){
   if(s){s.innerText="Unsaved Changes";s.className="badge unsavedBadge";}
   updateMemeBadges();
   if(typeof refreshStickyPublish==="function") refreshStickyPublish();
+  queueAutoPublish();
 }
 
 function markMemeSaved(){
@@ -4981,6 +5824,7 @@ function markModskinDirty(){
   if(s){s.innerText="Unsaved Changes";s.className="badge unsavedBadge";}
   updateModskinBadges();
   if(typeof refreshStickyPublish==="function") refreshStickyPublish();
+  queueAutoPublish();
 }
 
 function markModskinSaved(){
@@ -5261,13 +6105,13 @@ function render(){
     skins.forEach(({skin,realIndex})=>{
       skinsHtml+=`
       <div class="skin cut ${skin.featured?"featured":""} ${skin.enabled?"":"disabled"}">
-        <img src="${skin.image}" onerror="this.style.opacity=.25">
+        <img src="${esc(skin.image||"")}" loading="lazy" onerror="this.style.opacity=.25" onload="this.style.opacity=1">
         <div class="skinBody">
           <label class="selectSkinBox"><input type="checkbox" onchange="toggleSkinSelection(${hi},${realIndex},this.checked)" ${selectedSkinKeys[skinKey(hi,realIndex)]?"checked":""}> Select</label>
           <div class="skinTitle">${skin.featured?"Featured Skin":"Skin"} • ${(skin.skin_name||skin.name) ? esc(skin.skin_name||skin.name) : "No Name"} • ${skin.enabled?"Visible":"Hidden"}</div>
-          <div class="small">ID: ${skin.id}</div>
-          <div class="small">IMG: ${skin.image}</div>
-          <div class="small">ZIP: ${skin.script}</div>
+          <div class="small">ID: ${esc(skin.id||"")}</div>
+          <div class="small">IMG: ${esc(skin.image||"")}</div>
+          <div class="small">ZIP: ${esc(skin.script||"")}</div>
           ${renderTagBadges(skin.tags)}
           <div class="actions">
             <button class="btnBlue" onclick="openEditSkin(${hi},${realIndex})">Edit</button>
@@ -5284,10 +6128,10 @@ function render(){
     card.innerHTML=`
       <div class="heroHead">
         <div class="heroTop">
-          <div class="heroName">${hero.name}</div>
-          <div class="heroId">ID: ${hero.id}</div>
+          <div class="heroName">${esc(hero.name||"")}</div>
+          <div class="heroId">ID: ${esc(hero.id||"")}</div>
           <div class="badges">
-            <span class="badge badgeRed">${hero.category}</span>
+            <span class="badge badgeRed">${esc(hero.category||"")}</span>
             <span class="badge">${hero.skins.length} skins</span>
             <span class="badge ${hero.enabled?"badgeGreen":"badgeOff"}">${hero.enabled?"visible":"hidden"}</span>
           </div>
@@ -5313,6 +6157,153 @@ function render(){
   document.getElementById("statHeroes").innerText=DATA.heroes.length;
   document.getElementById("statSkins").innerText=totalSkins;
   document.getElementById("statEnabled").innerText=totalEnabled;
+}
+
+function addHeroFromHeroPage(){
+  const nameInput=document.getElementById("heroPageNewName");
+  const catInput=document.getElementById("heroPageNewCategory");
+  if(!nameInput) return;
+  const name=nameInput.value.trim();
+  if(!name){ showToast("Isi hero name dulu"); return; }
+  const id=makeHeroId(name);
+  DATA.heroes.push({id,name,category:catInput?catInput.value:"assassin",enabled:true,skins:[]});
+  markDirty();
+  nameInput.value="";
+  addActivity("Hero added",name);
+  showToast("Hero added.");
+  renderHeroPage();
+}
+
+function renderHeroPage(){
+  normalizeData();
+
+  const searchEl=document.getElementById("heroPageSearch");
+  const catEl=document.getElementById("heroPageFilterCategory");
+  const statusEl=document.getElementById("heroPageFilterStatus");
+  const list=document.getElementById("heroPageList");
+  if(!list) return;
+
+  const q=(searchEl?searchEl.value:"").toLowerCase();
+  const cat=catEl?catEl.value:"all";
+  const status=statusEl?statusEl.value:"all";
+
+  list.innerHTML="";
+
+  let totalSkins=0,totalEnabled=0;
+
+  DATA.heroes.forEach((hero,hi)=>{
+    totalSkins+=hero.skins.length;
+    hero.skins.forEach(s=>{if(s.enabled)totalEnabled++});
+
+    if(cat!=="all"&&hero.category!==cat)return;
+    if(status==="enabled"&&!hero.enabled)return;
+    if(status==="disabled"&&hero.enabled)return;
+
+    const searchable=[hero.id,hero.name,hero.category].join(" ").toLowerCase();
+    if(q&&!searchable.includes(q))return;
+
+    const card=document.createElement("div");
+    card.className="hero cut";
+    card.innerHTML=`
+      <div class="heroHead">
+        <div class="heroTop">
+          <div class="heroName">${esc(hero.name||"")}</div>
+          <div class="heroId">ID: ${esc(hero.id||"")}</div>
+          <div class="badges">
+            <span class="badge badgeRed">${esc(hero.category||"")}</span>
+            <span class="badge">${hero.skins.length} skins</span>
+            <span class="badge ${hero.enabled?"badgeGreen":"badgeOff"}">${hero.enabled?"visible":"hidden"}</span>
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btnGreen" onclick="openAddSkin(${hi})">+ Skin</button>
+        <button class="btnBlue" onclick="editHero(${hi})">Edit</button>
+        <button class="btnDark" onclick="sortHeroSkins(${hi})">Sort Skins</button>
+        <button class="btnDark" onclick="toggleHero(${hi})">${hero.enabled?"Hide":"Show"}</button>
+        <button class="btnRed" onclick="deleteHero(${hi})">Delete</button>
+      </div>`;
+    list.appendChild(card);
+  });
+
+  const statHeroes=document.getElementById("heroPageStatHeroes");
+  const statSkins=document.getElementById("heroPageStatSkins");
+  const statEnabled=document.getElementById("heroPageStatEnabled");
+  if(statHeroes) statHeroes.innerText=DATA.heroes.length;
+  if(statSkins) statSkins.innerText=totalSkins;
+  if(statEnabled) statEnabled.innerText=totalEnabled;
+}
+
+function renderSkinsPage(){
+  normalizeData();
+
+  const searchEl=document.getElementById("skinsPageSearch");
+  const catEl=document.getElementById("skinsPageFilterCategory");
+  const statusEl=document.getElementById("skinsPageFilterStatus");
+  const list=document.getElementById("skinsPageList");
+  if(!list) return;
+
+  const q=(searchEl?searchEl.value:"").toLowerCase();
+  const cat=catEl?catEl.value:"all";
+  const status=statusEl?statusEl.value:"all";
+
+  list.innerHTML="";
+
+  let totalSkins=0,totalEnabled=0,totalFeatured=0;
+  const rows=[];
+
+  DATA.heroes.forEach((hero,hi)=>{
+    if(cat!=="all"&&hero.category!==cat)return;
+
+    hero.skins.forEach((skin,realIndex)=>{
+      totalSkins++;
+      if(skin.enabled) totalEnabled++;
+      if(skin.featured) totalFeatured++;
+
+      if(status==="featured"&&!skin.featured)return;
+      if(status==="enabled"&&!skin.enabled)return;
+      if(status==="disabled"&&skin.enabled)return;
+
+      const tagText=normalizeSkinTags(skin.tags||[]).map(t=>`${t.id} ${t.name}`).join(" ");
+      const searchable=[hero.id,hero.name,hero.category,skin.id,skin.name,skin.skin_name,skin.image,skin.script,tagText].join(" ").toLowerCase();
+      if(q&&!searchable.includes(q))return;
+
+      rows.push({hero,hi,skin,realIndex});
+    });
+  });
+
+  rows.forEach(({hero,hi,skin,realIndex})=>{
+    const row=document.createElement("div");
+    row.className=`skin cut ${skin.featured?"featured":""} ${skin.enabled?"":"disabled"}`;
+    row.innerHTML=`
+      <img src="${esc(skin.image||"")}" loading="lazy" onerror="this.style.opacity=.25" onload="this.style.opacity=1">
+      <div class="skinBody">
+        <div class="skinTitle">${skin.featured?"Featured Skin":"Skin"} • ${(skin.skin_name||skin.name) ? esc(skin.skin_name||skin.name) : "No Name"} • ${skin.enabled?"Visible":"Hidden"}</div>
+        <div class="small">Hero: ${esc(hero.name||"")} (${esc(hero.category||"")})</div>
+        <div class="small">ID: ${esc(skin.id||"")}</div>
+        <div class="small">IMG: ${esc(skin.image||"")}</div>
+        <div class="small">ZIP: ${esc(skin.script||"")}</div>
+        ${renderTagBadges(skin.tags)}
+        <div class="actions">
+          <button class="btnBlue" onclick="openEditSkin(${hi},${realIndex})">Edit</button>
+          <button class="btnYellow" onclick="toggleFeatured(${hi},${realIndex})">★</button>
+          <button class="btnDark" onclick="toggleSkin(${hi},${realIndex})">${skin.enabled?"Hide":"Show"}</button>
+          <button class="btnRed" onclick="deleteSkin(${hi},${realIndex})">Delete</button>
+        </div>
+      </div>`;
+    list.appendChild(row);
+  });
+
+  if(rows.length===0){
+    list.innerHTML=`<div style="color:#777;margin-top:12px;grid-column:1/-1">No skins found.</div>`;
+  }
+
+  const statTotal=document.getElementById("skinsPageStatTotal");
+  const statEnabled=document.getElementById("skinsPageStatEnabled");
+  const statFeatured=document.getElementById("skinsPageStatFeatured");
+  if(statTotal) statTotal.innerText=totalSkins;
+  if(statEnabled) statEnabled.innerText=totalEnabled;
+  if(statFeatured) statFeatured.innerText=totalFeatured;
 }
 
 
@@ -5391,9 +6382,10 @@ function testImageUrl(url, cb){
   setTimeout(()=>finish(false,'Image test timeout'),7000);
   img.src=url + (url.includes('?')?'&':'?') + 'imgtest=' + Date.now();
 }
+const imageDebounceTimers={};
 function debounceImageTest(inputId,statusId){
-  clearTimeout(imageDebounceTimer);
-  imageDebounceTimer=setTimeout(()=>testSingleImage(inputId,statusId),600);
+  clearTimeout(imageDebounceTimers[inputId]);
+  imageDebounceTimers[inputId]=setTimeout(()=>testSingleImage(inputId,statusId),600);
 }
 function testSingleImage(inputId,statusId){
   const input=document.getElementById(inputId), status=document.getElementById(statusId);
@@ -5415,11 +6407,11 @@ function checkAllVisibleImages(){
 
 function createBackupDownload(label){
   try{
-    const backup={created_at:new Date().toISOString(), label:label||'manual_backup', skins:DATA, tags:{tag_database:TAG_DATABASE}, skin_upgrades:UPGRADE_DATA, custom:MODSKIN_DATA, meme:MEME_DATA};
+    const backup={created_at:new Date().toISOString(), label:label||'manual_backup', skins:DATA, tags:{tag_database:TAG_DATABASE}, skin_upgrades:UPGRADE_DATA, custom:MODSKIN_DATA, meme:MEME_DATA, suggested:SUGGESTED_DATA};
     const blob=new Blob([JSON.stringify(backup,null,2)],{type:'application/json'});
     const a=document.createElement('a');
     a.href=URL.createObjectURL(blob);
-    a.download=`warlito_backup_${label||'manual'}_${new Date().toISOString().replace(/[:.]/g,'-')}.json`;
+    a.download=`Sanzxmzz_backup_${label||'manual'}_${new Date().toISOString().replace(/[:.]/g,'-')}.json`;
     document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
     addActivity('Backup created', a.download);
   }catch(e){console.log(e);showToast('Backup failed.');}
@@ -5445,6 +6437,9 @@ function collectChangePreview(){
   groups.push(diffArrayById((UPGRADE_ORIGINAL&&UPGRADE_ORIGINAL.skin_upgrades)||[], (UPGRADE_DATA&&UPGRADE_DATA.skin_upgrades)||[], 'Upgrade Bases'));
   groups.push(diffArrayById(MODSKIN_ORIGINAL||[], MODSKIN_DATA||[], 'Custom Backup Heroes'));
   groups.push(diffArrayById(MEME_ORIGINAL||[], MEME_DATA||[], 'Meme Backup Heroes'));
+  const oldSuggested=(SUGGESTED_ORIGINAL||[]).map((x,i)=>({...x,id:x.hero_id+'_'+(x.skin_name||i)}));
+  const newSuggested=(SUGGESTED_DATA||[]).map((x,i)=>({...x,id:x.hero_id+'_'+(x.skin_name||i)}));
+  groups.push(diffArrayById(oldSuggested,newSuggested,'Suggested Skins'));
   return groups;
 }
 function openPreviewChanges(){
@@ -5456,9 +6451,9 @@ function openPreviewChanges(){
     const count=g.added.length+g.edited.length+g.deleted.length; total+=count;
     if(count===0) return '';
     const rows=[];
-    g.added.forEach(x=>rows.push(`<li>Added: ${esc(x.name||x.base_name||x.id||'Untitled')}</li>`));
-    g.edited.forEach(x=>rows.push(`<li>Edited: ${esc(x.name||x.base_name||x.id||'Untitled')}</li>`));
-    g.deleted.forEach(x=>rows.push(`<li>Deleted: ${esc(x.name||x.base_name||x.id||'Untitled')}</li>`));
+     g.added.forEach(x=>rows.push(`<li>Added: ${esc(x.name||x.skin_name||x.base_name||x.id||'Untitled')}</li>`));
+     g.edited.forEach(x=>rows.push(`<li>Edited: ${esc(x.name||x.skin_name||x.base_name||x.id||'Untitled')}</li>`));
+     g.deleted.forEach(x=>rows.push(`<li>Deleted: ${esc(x.name||x.skin_name||x.base_name||x.id||'Untitled')}</li>`));
     return `<div class="previewGroup"><b>${esc(g.label)} • ${count}</b><ul>${rows.join('')}</ul></div>`;
   }).join('') || '<div class="previewGroup"><b>No local changes.</b><div class="small">Everything is saved or no edits detected.</div></div>';
   if(badge) badge.innerText=total+' change(s)';
@@ -5480,19 +6475,19 @@ function updateBulkBar(){
   const arr=selectedSkinList(), bar=document.getElementById('bulkBar'), count=document.getElementById('bulkCount');
   if(count)count.innerText=arr.length+' selected'; if(bar)bar.classList.toggle('show',arr.length>0);
 }
-function bulkSetSkinEnabled(value){selectedSkinList().forEach(x=>DATA.heroes[x.heroIndex].skins[x.skinIndex].enabled=value); addActivity('Bulk visibility', selectedSkinList().length+' skin(s) updated'); selectedSkinKeys={}; markDirty(); render(); updateBulkBar();}
-function bulkSetFeatured(value){selectedSkinList().forEach(x=>DATA.heroes[x.heroIndex].skins[x.skinIndex].featured=value); addActivity('Bulk featured', selectedSkinList().length+' skin(s) updated'); selectedSkinKeys={}; markDirty(); render(); updateBulkBar();}
+function bulkSetSkinEnabled(value){selectedSkinList().forEach(x=>DATA.heroes[x.heroIndex].skins[x.skinIndex].enabled=value); addActivity('Bulk visibility', selectedSkinList().length+' skin(s) updated'); selectedSkinKeys={}; markDirty(); renderHeroSkinViews(); updateBulkBar();}
+function bulkSetFeatured(value){selectedSkinList().forEach(x=>DATA.heroes[x.heroIndex].skins[x.skinIndex].featured=value); addActivity('Bulk featured', selectedSkinList().length+' skin(s) updated'); selectedSkinKeys={}; markDirty(); renderHeroSkinViews(); updateBulkBar();}
 function bulkDeleteSkins(){
   const arr=selectedSkinList(); if(arr.length===0)return;
   showConfirm('Bulk Delete Skins',`Delete ${arr.length} selected skin(s)?`,()=>{
     arr.sort((a,b)=>b.heroIndex-a.heroIndex || b.skinIndex-a.skinIndex).forEach(x=>{if(DATA.heroes[x.heroIndex]&&DATA.heroes[x.heroIndex].skins[x.skinIndex]) DATA.heroes[x.heroIndex].skins.splice(x.skinIndex,1);});
-    addActivity('Bulk delete', arr.length+' skin(s) deleted locally'); selectedSkinKeys={}; markDirty(); render(); updateBulkBar();
+    addActivity('Bulk delete', arr.length+' skin(s) deleted locally'); selectedSkinKeys={}; markDirty(); renderHeroSkinViews(); updateBulkBar();
   });
 }
 
-function sortHeroesByName(){DATA.heroes.sort((a,b)=>String(a.name||'').localeCompare(String(b.name||''))); addActivity('Sorted heroes','Heroes sorted A-Z'); markDirty(); render();}
-function sortAllSkinsByName(){(DATA.heroes||[]).forEach(h=>(h.skins||[]).sort((a,b)=>String(a.name||'').localeCompare(String(b.name||'')))); addActivity('Sorted skins','All hero skins sorted A-Z'); markDirty(); render();}
-function sortHeroSkins(heroIndex){const h=DATA.heroes[heroIndex]; if(!h)return; h.skins.sort((a,b)=>String(a.name||'').localeCompare(String(b.name||''))); addActivity('Sorted hero skins', h.name); markDirty(); render();}
+function sortHeroesByName(){DATA.heroes.sort((a,b)=>String(a.name||'').localeCompare(String(b.name||''))); addActivity('Sorted heroes','Heroes sorted A-Z'); markDirty(); renderHeroSkinViews();}
+function sortAllSkinsByName(){(DATA.heroes||[]).forEach(h=>(h.skins||[]).sort((a,b)=>String(a.name||'').localeCompare(String(b.name||'')))); addActivity('Sorted skins','All hero skins sorted A-Z'); markDirty(); renderHeroSkinViews();}
+function sortHeroSkins(heroIndex){const h=DATA.heroes[heroIndex]; if(!h)return; h.skins.sort((a,b)=>String(a.name||'').localeCompare(String(b.name||''))); addActivity('Sorted hero skins', h.name); markDirty(); renderHeroSkinViews();}
 
 function getTagUsageCount(id){
   id=String(id||'').toLowerCase(); let count=0;
@@ -5794,7 +6789,7 @@ function getBrokenTarget(index){ return BROKEN_IMAGE_RESULTS[index]||null; }
 
 function applyImageUrlToTarget(item,newUrl){
   if(!item) return false;
-  if(item.type==='skin' && DATA.heroes[item.heroIndex] && DATA.heroes[item.heroIndex].skins[item.skinIndex]){ DATA.heroes[item.heroIndex].skins[item.skinIndex].image=newUrl; markDirty(); render(); return true; }
+  if(item.type==='skin' && DATA.heroes[item.heroIndex] && DATA.heroes[item.heroIndex].skins[item.skinIndex]){ DATA.heroes[item.heroIndex].skins[item.skinIndex].image=newUrl; markDirty(); renderHeroSkinViews(); return true; }
   if(item.type==='upgradeBase' && UPGRADE_DATA.skin_upgrades[item.baseIndex]){ UPGRADE_DATA.skin_upgrades[item.baseIndex].base_image=newUrl; markUpgradeDirty(); renderUpgrades(); return true; }
   if(item.type==='upgradeTarget' && UPGRADE_DATA.skin_upgrades[item.baseIndex] && UPGRADE_DATA.skin_upgrades[item.baseIndex].targets[item.targetIndex]){ UPGRADE_DATA.skin_upgrades[item.baseIndex].targets[item.targetIndex].image=newUrl; markUpgradeDirty(); renderUpgrades(); return true; }
   if(item.type==='modskinBase' && MODSKIN_DATA[item.modskinIndex]){ MODSKIN_DATA[item.modskinIndex].image=newUrl; markModskinDirty(); renderModskins(); return true; }
@@ -6009,7 +7004,7 @@ window.removeBrokenImageUrl=removeBrokenImageUrl;
   function applyFinal(item,newUrl){
     if(!item) return false;
     try{
-      if(item.type==='skin' && DATA.heroes[item.heroIndex]?.skins[item.skinIndex]){ DATA.heroes[item.heroIndex].skins[item.skinIndex].image=newUrl; markDirty(); render(); return true; }
+      if(item.type==='skin' && DATA.heroes[item.heroIndex]?.skins[item.skinIndex]){ DATA.heroes[item.heroIndex].skins[item.skinIndex].image=newUrl; markDirty(); renderHeroSkinViews(); return true; }
       if(item.type==='upgradeBase' && UPGRADE_DATA.skin_upgrades[item.baseIndex]){ UPGRADE_DATA.skin_upgrades[item.baseIndex].base_image=newUrl; markUpgradeDirty(); renderUpgrades(); return true; }
       if(item.type==='upgradeTarget' && UPGRADE_DATA.skin_upgrades[item.baseIndex]?.targets[item.targetIndex]){ UPGRADE_DATA.skin_upgrades[item.baseIndex].targets[item.targetIndex].image=newUrl; markUpgradeDirty(); renderUpgrades(); return true; }
       if(item.type==='modskinBase' && MODSKIN_DATA[item.modskinIndex]){ MODSKIN_DATA[item.modskinIndex].image=newUrl; markModskinDirty(); renderModskins(); return true; }
