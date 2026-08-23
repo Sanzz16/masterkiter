@@ -1,14 +1,8 @@
 {
-  "version_code": 7,
-  "version_name": "1.1.0",
-  "title": "Masterkit Update Available",
-  "message": "Added 2 new Features!",
-  "changelog": [
-    "Added Meme Skins",
-    "Added Custom Maps",
-    "Fix App Bugs & Errors"
-  ],
-  "download_url": "https://play.google.com/store/apps/details?id=com.iandev.masterkit",
-  "update_size": "18 MB",
-  "force_update": true
+  "enabled": true,
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPNUUPj033qcJ0tEz8McuW4Ex8s7ysAGZ80LpECmZ3H3MFrJZkiUO1PPzu&s=10",
+  "description": "🚀 News Sanz Toolkit\n\nVersi terbaru sudah siap untuk kamu.\n\nNikmati berbagai peningkatan dan fitur baru yang bikin aplikasi makin cepat, stabil, dan nyaman digunakan.\n\n✨ Apa yang baru?\n\n- ⚡ Performa lebih cepat & responsif\n- 🎨 Tampilan UI lebih modern\n- 🛠️ Perbaikan bug & error\n- 🔒 Peningkatan keamanan\n- 🚀 Optimasi sistem aplikasi\n\nVersi saat ini\nv1.1.0\n\nVersi sebelum\nv1.0.0\n\nUkuran update: 18.8 MB\n\n« Update sekarang mendapatkan pengalaman yang terbaik. »\n\n[ 🚀 ENJOY NEW UPDATE ]",
+  "button1_text": "CLOSE",
+  "button2_text": "OKE",
+  "button2_link": ""
 }
